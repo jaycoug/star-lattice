@@ -1,0 +1,3326 @@
+{
+  "format": "star-lattice-save",
+  "version": 8,
+  "content": "life",
+  "title": "outlook",
+  "state": {
+    "version": 1,
+    "nextId": 166,
+    "stars": {
+      "s0": {
+        "id": "s0",
+        "n": 0,
+        "sources": [],
+        "kites": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "notes": [
+          "Review the week every Sunday.",
+          "Due dates first, then the rest."
+        ],
+        "shelved": false,
+        "deployed": true
+      },
+      "s11": {
+        "id": "s11",
+        "n": 11,
+        "sources": [
+          "d10"
+        ],
+        "kites": [
+          "k12",
+          "k13",
+          "k14",
+          "k15",
+          "k16",
+          "k17"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s23": {
+        "id": "s23",
+        "n": 23,
+        "sources": [
+          "d22"
+        ],
+        "kites": [
+          "k24",
+          "k25",
+          "k26",
+          "k27",
+          "k28",
+          "k29"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s38": {
+        "id": "s38",
+        "n": 38,
+        "sources": [
+          "d37"
+        ],
+        "kites": [
+          "k39",
+          "k40",
+          "k41",
+          "k42",
+          "k43",
+          "k44"
+        ],
+        "notes": [
+          "Work through these in order."
+        ],
+        "shelved": false,
+        "deployed": true
+      },
+      "s50": {
+        "id": "s50",
+        "n": 50,
+        "sources": [
+          "d49"
+        ],
+        "kites": [
+          "k51",
+          "k52",
+          "k53",
+          "k54",
+          "k55",
+          "k56"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s64": {
+        "id": "s64",
+        "n": 64,
+        "sources": [
+          "d63"
+        ],
+        "kites": [
+          "k65",
+          "k66",
+          "k67",
+          "k68",
+          "k69",
+          "k70"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s80": {
+        "id": "s80",
+        "n": 80,
+        "sources": [
+          "d79"
+        ],
+        "kites": [
+          "k81",
+          "k82",
+          "k83",
+          "k84",
+          "k85",
+          "k86"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s93": {
+        "id": "s93",
+        "n": 93,
+        "sources": [
+          "d92"
+        ],
+        "kites": [
+          "k94",
+          "k95",
+          "k96",
+          "k97",
+          "k98",
+          "k99"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s105": {
+        "id": "s105",
+        "n": 105,
+        "sources": [
+          "d104"
+        ],
+        "kites": [
+          "k106",
+          "k107",
+          "k108",
+          "k109",
+          "k110",
+          "k111"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s116": {
+        "id": "s116",
+        "n": 116,
+        "sources": [
+          "d115"
+        ],
+        "kites": [
+          "k117",
+          "k118",
+          "k119",
+          "k120",
+          "k121",
+          "k122"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s132": {
+        "id": "s132",
+        "n": 132,
+        "sources": [
+          "d131"
+        ],
+        "kites": [
+          "k133",
+          "k134",
+          "k135",
+          "k136",
+          "k137",
+          "k138"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s147": {
+        "id": "s147",
+        "n": 147,
+        "sources": [
+          "d146"
+        ],
+        "kites": [
+          "k148",
+          "k149",
+          "k150",
+          "k151",
+          "k152",
+          "k153"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      }
+    },
+    "kites": {
+      "k1": {
+        "id": "k1",
+        "name": "Job search",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d7",
+          "d8",
+          "d10",
+          "d9"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k2": {
+        "id": "k2",
+        "name": "Practice",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d34",
+          "d35",
+          "d37",
+          "d36"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k3": {
+        "id": "k3",
+        "name": "Chores",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d76",
+          "d77",
+          "d79",
+          "d78"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k4": {
+        "id": "k4",
+        "name": "Courses",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d90",
+          "d91",
+          "d104",
+          "d92"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k5": {
+        "id": "k5",
+        "name": "Routines",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d128",
+          "d129",
+          "d131",
+          "d130"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k6": {
+        "id": "k6",
+        "name": "Weekends",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d143",
+          null,
+          "d146",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k12": {
+        "id": "k12",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k13": {
+        "id": "k13",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k14": {
+        "id": "k14",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d22",
+          "d33",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k15": {
+        "id": "k15",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d18",
+          "d19",
+          "d20",
+          "d21"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k16": {
+        "id": "k16",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k17": {
+        "id": "k17",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k24": {
+        "id": "k24",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k25": {
+        "id": "k25",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k26": {
+        "id": "k26",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k27": {
+        "id": "k27",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d30",
+          "d31",
+          "d32",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k28": {
+        "id": "k28",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k29": {
+        "id": "k29",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k39": {
+        "id": "k39",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k40": {
+        "id": "k40",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k41": {
+        "id": "k41",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d49",
+          "d60",
+          "d61",
+          "d62"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k42": {
+        "id": "k42",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d45",
+          "d46",
+          "d47",
+          "d48"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k43": {
+        "id": "k43",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d63",
+          "d74",
+          "d75",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k44": {
+        "id": "k44",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k51": {
+        "id": "k51",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k52": {
+        "id": "k52",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k53": {
+        "id": "k53",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k54": {
+        "id": "k54",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d57",
+          "d58",
+          "d59",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k55": {
+        "id": "k55",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k56": {
+        "id": "k56",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k65": {
+        "id": "k65",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k66": {
+        "id": "k66",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k67": {
+        "id": "k67",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k68": {
+        "id": "k68",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d71",
+          "d72",
+          "d73",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k69": {
+        "id": "k69",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k70": {
+        "id": "k70",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k81": {
+        "id": "k81",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k82": {
+        "id": "k82",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k83": {
+        "id": "k83",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k84": {
+        "id": "k84",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d87",
+          "d88",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k85": {
+        "id": "k85",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k86": {
+        "id": "k86",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k94": {
+        "id": "k94",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k95": {
+        "id": "k95",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k96": {
+        "id": "k96",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k97": {
+        "id": "k97",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d100",
+          "d101",
+          "d102",
+          "d103"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k98": {
+        "id": "k98",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k99": {
+        "id": "k99",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k106": {
+        "id": "k106",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          "d115",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k107": {
+        "id": "k107",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k108": {
+        "id": "k108",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k109": {
+        "id": "k109",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d112",
+          "d113",
+          "d114",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k110": {
+        "id": "k110",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k111": {
+        "id": "k111",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k117": {
+        "id": "k117",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k118": {
+        "id": "k118",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k119": {
+        "id": "k119",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d127",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k120": {
+        "id": "k120",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d123",
+          "d124",
+          "d125",
+          "d126"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k121": {
+        "id": "k121",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k122": {
+        "id": "k122",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k133": {
+        "id": "k133",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k134": {
+        "id": "k134",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k135": {
+        "id": "k135",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k136": {
+        "id": "k136",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d139",
+          "d140",
+          "d141",
+          "d142"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k137": {
+        "id": "k137",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k138": {
+        "id": "k138",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k148": {
+        "id": "k148",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k149": {
+        "id": "k149",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k150": {
+        "id": "k150",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k151": {
+        "id": "k151",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d154",
+          "d155",
+          "d156",
+          "d157"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k152": {
+        "id": "k152",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k153": {
+        "id": "k153",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      }
+    },
+    "dots": {
+      "d7": {
+        "id": "d7",
+        "name": "Update the résumé",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": "office",
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793963972549,
+        "relations": [
+          {
+            "dot": "d10",
+            "score": 5,
+            "how": "The résumé goes with every application."
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d8": {
+        "id": "d8",
+        "name": "Ask for two references",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-13"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d9": {
+        "id": "d9",
+        "name": "Research five companies",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d10": {
+        "id": "d10",
+        "name": "Applications",
+        "description": "Every job application, from the letter to the follow-up.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": "2026-11-21"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s11"
+      },
+      "d18": {
+        "id": "d18",
+        "name": "Write a cover letter",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794050372549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d19": {
+        "id": "d19",
+        "name": "Apply to the first company",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-10"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d20": {
+        "id": "d20",
+        "name": "Apply to the second company",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d21": {
+        "id": "d21",
+        "name": "Follow up after a week",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-18"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d22": {
+        "id": "d22",
+        "name": "Interview practice",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s23"
+      },
+      "d30": {
+        "id": "d30",
+        "name": "Common questions",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d31": {
+        "id": "d31",
+        "name": "A mock interview",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d32": {
+        "id": "d32",
+        "name": "Questions to ask them",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d33": {
+        "id": "d33",
+        "name": "Track every application",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793359172549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d34": {
+        "id": "d34",
+        "name": "Touch typing",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "daily",
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793963972549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d35": {
+        "id": "d35",
+        "name": "Spreadsheet formulas",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794136772549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d36": {
+        "id": "d36",
+        "name": "Public speaking",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d31",
+            "score": 4,
+            "how": ""
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d37": {
+        "id": "d37",
+        "name": "Computer Science",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s38"
+      },
+      "d45": {
+        "id": "d45",
+        "name": "Variables and types",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793791172549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d46": {
+        "id": "d46",
+        "name": "Loops",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793877572549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d47": {
+        "id": "d47",
+        "name": "Functions",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d48": {
+        "id": "d48",
+        "name": "Recursion",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d49": {
+        "id": "d49",
+        "name": "Data structures",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s50"
+      },
+      "d57": {
+        "id": "d57",
+        "name": "Lists",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d58": {
+        "id": "d58",
+        "name": "Trees",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d59": {
+        "id": "d59",
+        "name": "Hash tables",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d60": {
+        "id": "d60",
+        "name": "Algorithms",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d61": {
+        "id": "d61",
+        "name": "Sorting",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d62": {
+        "id": "d62",
+        "name": "Searching",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d63": {
+        "id": "d63",
+        "name": "A small project",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s64"
+      },
+      "d71": {
+        "id": "d71",
+        "name": "Pick the idea",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d72": {
+        "id": "d72",
+        "name": "Build it",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d73": {
+        "id": "d73",
+        "name": "Show someone",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d74": {
+        "id": "d74",
+        "name": "Version control",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d75": {
+        "id": "d75",
+        "name": "Testing",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d76": {
+        "id": "d76",
+        "name": "Laundry",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": "den",
+          "finance": null,
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793445572549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d77": {
+        "id": "d77",
+        "name": "Groceries",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "money",
+          "place"
+        ],
+        "props": {
+          "environment": "local",
+          "finance": {
+            "amount": -80,
+            "period": "week"
+          },
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794050372549,
+        "relations": [
+          {
+            "dot": "d79",
+            "score": 3,
+            "how": ""
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d78": {
+        "id": "d78",
+        "name": "Pay rent",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "money"
+        ],
+        "props": {
+          "environment": null,
+          "finance": {
+            "amount": -1200,
+            "period": "month"
+          },
+          "persistence": "monthly",
+          "difficulty": null,
+          "due": "2026-11-08"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d79": {
+        "id": "d79",
+        "name": "Kitchen",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s80"
+      },
+      "d87": {
+        "id": "d87",
+        "name": "Clean the fridge",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": "kitchen",
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d88": {
+        "id": "d88",
+        "name": "Sharpen the knives",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d89": {
+        "id": "d89",
+        "name": "Restock the spices",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793704772549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d90": {
+        "id": "d90",
+        "name": "Read chapter one",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793186372549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d91": {
+        "id": "d91",
+        "name": "Study group",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793531972549,
+        "relations": [
+          {
+            "dot": "d113",
+            "score": 3,
+            "how": ""
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d92": {
+        "id": "d92",
+        "name": "Coursework",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s93"
+      },
+      "d100": {
+        "id": "d100",
+        "name": "Essay outline",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793618372549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d101": {
+        "id": "d101",
+        "name": "Essay draft",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-14"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d102": {
+        "id": "d102",
+        "name": "Lab report",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d103": {
+        "id": "d103",
+        "name": "Final exam",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": "2026-12-09"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d104": {
+        "id": "d104",
+        "name": "Statistics",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [
+          "Ask about the grading scale."
+        ],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d35",
+            "score": 3,
+            "how": "Both use the same formulas."
+          }
+        ],
+        "history": [],
+        "branch": "s105"
+      },
+      "d112": {
+        "id": "d112",
+        "name": "Lecture notes",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793877572549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d113": {
+        "id": "d113",
+        "name": "Office hours",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-11"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d114": {
+        "id": "d114",
+        "name": "Midterm review",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": "2026-11-23"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d115": {
+        "id": "d115",
+        "name": "Problem set",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s116"
+      },
+      "d123": {
+        "id": "d123",
+        "name": "1.",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d124": {
+        "id": "d124",
+        "name": "2.",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d125": {
+        "id": "d125",
+        "name": "3.",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d126": {
+        "id": "d126",
+        "name": "4.",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d127": {
+        "id": "d127",
+        "name": "5.",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d128": {
+        "id": "d128",
+        "name": "Morning walk",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": "local",
+          "finance": null,
+          "persistence": "daily",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794223172549,
+        "relations": [
+          {
+            "dot": "d140",
+            "score": 2,
+            "how": ""
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d129": {
+        "id": "d129",
+        "name": "Drink water",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "daily",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794050372549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d130": {
+        "id": "d130",
+        "name": "Dentist appointment",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "place",
+          "money"
+        ],
+        "props": {
+          "environment": null,
+          "finance": {
+            "amount": -60,
+            "period": "once"
+          },
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-06"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d131": {
+        "id": "d131",
+        "name": "Fitness",
+        "description": "Training for a first race.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s132"
+      },
+      "d139": {
+        "id": "d139",
+        "name": "Stretching",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "daily",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794136772549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d140": {
+        "id": "d140",
+        "name": "Run two miles",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793963972549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d141": {
+        "id": "d141",
+        "name": "Strength training",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d142": {
+        "id": "d142",
+        "name": "Sign up for a race",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "money"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": "2026-11-29"
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d143": {
+        "id": "d143",
+        "name": "Call a friend",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "people"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": "weekly",
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1793877572549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d144": {
+        "id": "d144",
+        "name": "Read a novel",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1792495172549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d145": {
+        "id": "d145",
+        "name": "Learn a song",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d146": {
+        "id": "d146",
+        "name": "Trip planning",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s147"
+      },
+      "d154": {
+        "id": "d154",
+        "name": "Pick a weekend",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794136772549,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d155": {
+        "id": "d155",
+        "name": "Book a place to stay",
+        "description": "",
+        "role": "check",
+        "marks": [
+          "money"
+        ],
+        "props": {
+          "environment": null,
+          "finance": {
+            "amount": -150,
+            "period": "once"
+          },
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d156": {
+        "id": "d156",
+        "name": "Pack a bag",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d157": {
+        "id": "d157",
+        "name": "Plan the route",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": "distant",
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      }
+    },
+    "shelf": [
+      {
+        "kind": "dot",
+        "id": "d145"
+      }
+    ],
+    "retired": [
+      {
+        "id": "d89",
+        "at": 1794136772549,
+        "from": {
+          "parent": "d79",
+          "kite": "k84",
+          "slot": 2
+        }
+      },
+      {
+        "id": "d144",
+        "at": 1794136772549,
+        "from": {
+          "parent": null,
+          "kite": "k6",
+          "slot": 1
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b159",
+        "dot": "d101",
+        "start": 1794326400000,
+        "minutes": 60
+      },
+      {
+        "id": "b158",
+        "dot": "d18",
+        "start": 1794339000000,
+        "minutes": 60
+      },
+      {
+        "id": "b160",
+        "dot": "d101",
+        "start": 1794351600000,
+        "minutes": 60
+      },
+      {
+        "id": "b165",
+        "dot": "d48",
+        "start": 1794420000000,
+        "minutes": 60
+      },
+      {
+        "id": "b161",
+        "dot": "d128",
+        "start": 1794425400000,
+        "minutes": 60
+      },
+      {
+        "id": "b162",
+        "dot": "d114",
+        "start": 1794501900000,
+        "minutes": 60
+      },
+      {
+        "id": "b163",
+        "dot": "d114",
+        "start": 1794521700000,
+        "minutes": 60
+      },
+      {
+        "id": "b164",
+        "dot": "d156",
+        "start": 1794598200000,
+        "minutes": 60
+      }
+    ],
+    "waits": {},
+    "lists": {},
+    "goals": {},
+    "complete": {},
+    "seed": ""
+  },
+  "board": "free",
+  "share": 100,
+  "gap": 30,
+  "pin": null,
+  "designs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

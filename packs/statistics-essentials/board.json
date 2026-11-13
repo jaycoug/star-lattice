@@ -1,0 +1,2767 @@
+{
+  "format": "star-lattice-save",
+  "version": 8,
+  "content": "statistics-essentials",
+  "title": "Statistics essentials",
+  "state": {
+    "version": 1,
+    "nextId": 85,
+    "stars": {
+      "s0": {
+        "id": "s0",
+        "n": 0,
+        "sources": [],
+        "kites": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s43": {
+        "id": "s43",
+        "n": 43,
+        "sources": [
+          "d8"
+        ],
+        "kites": [
+          "k44",
+          "k45",
+          "k46",
+          "k47",
+          "k48",
+          "k49"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s50": {
+        "id": "s50",
+        "n": 50,
+        "sources": [
+          "d14"
+        ],
+        "kites": [
+          "k51",
+          "k52",
+          "k53",
+          "k54",
+          "k55",
+          "k56"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s57": {
+        "id": "s57",
+        "n": 57,
+        "sources": [
+          "d20"
+        ],
+        "kites": [
+          "k58",
+          "k59",
+          "k60",
+          "k61",
+          "k62",
+          "k63"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s64": {
+        "id": "s64",
+        "n": 64,
+        "sources": [
+          "d26"
+        ],
+        "kites": [
+          "k65",
+          "k66",
+          "k67",
+          "k68",
+          "k69",
+          "k70"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s71": {
+        "id": "s71",
+        "n": 71,
+        "sources": [
+          "d32"
+        ],
+        "kites": [
+          "k72",
+          "k73",
+          "k74",
+          "k75",
+          "k76",
+          "k77"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s78": {
+        "id": "s78",
+        "n": 78,
+        "sources": [
+          "d38"
+        ],
+        "kites": [
+          "k79",
+          "k80",
+          "k81",
+          "k82",
+          "k83",
+          "k84"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      }
+    },
+    "kites": {
+      "k1": {
+        "id": "k1",
+        "name": "Describing data",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          "d7",
+          "d8",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k2": {
+        "id": "k2",
+        "name": "Probability",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          "d13",
+          "d14",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k3": {
+        "id": "k3",
+        "name": "Distributions",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          "d19",
+          "d20",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k4": {
+        "id": "k4",
+        "name": "Estimation",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          "d25",
+          "d26",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k5": {
+        "id": "k5",
+        "name": "Hypothesis tests",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          "d31",
+          "d32",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k6": {
+        "id": "k6",
+        "name": "Regression",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          "d37",
+          "d38",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k44": {
+        "id": "k44",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k45": {
+        "id": "k45",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          "d12",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k46": {
+        "id": "k46",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          "d10",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k47": {
+        "id": "k47",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          "d9",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k48": {
+        "id": "k48",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          "d11",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k49": {
+        "id": "k49",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k51": {
+        "id": "k51",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k52": {
+        "id": "k52",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          "d18",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k53": {
+        "id": "k53",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          "d16",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k54": {
+        "id": "k54",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          "d15",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k55": {
+        "id": "k55",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          "d17",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k56": {
+        "id": "k56",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k58": {
+        "id": "k58",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k59": {
+        "id": "k59",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          "d24",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k60": {
+        "id": "k60",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          "d22",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k61": {
+        "id": "k61",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          "d21",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k62": {
+        "id": "k62",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          "d23",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k63": {
+        "id": "k63",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k65": {
+        "id": "k65",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k66": {
+        "id": "k66",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          "d30",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k67": {
+        "id": "k67",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          "d28",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k68": {
+        "id": "k68",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          "d27",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k69": {
+        "id": "k69",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          "d29",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k70": {
+        "id": "k70",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k72": {
+        "id": "k72",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k73": {
+        "id": "k73",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          "d36",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k74": {
+        "id": "k74",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          "d34",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k75": {
+        "id": "k75",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          "d33",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k76": {
+        "id": "k76",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          "d35",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k77": {
+        "id": "k77",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k79": {
+        "id": "k79",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k80": {
+        "id": "k80",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          "d42",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k81": {
+        "id": "k81",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          "d40",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k82": {
+        "id": "k82",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          "d39",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k83": {
+        "id": "k83",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          "d41",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k84": {
+        "id": "k84",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      }
+    },
+    "dots": {
+      "d7": {
+        "id": "d7",
+        "name": "Center and outliers",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "Which measure of center is least affected by a few extreme values?",
+              "image": null,
+              "hints": [],
+              "explain": "The median depends only on the middle value or values.",
+              "options": [
+                {
+                  "text": "Mean",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Median",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Range",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Standard deviation",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d8": {
+        "id": "d8",
+        "name": "Median",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "The data 2, 4, 4, 5, 7, 8 have a median of:",
+              "image": null,
+              "hints": [],
+              "explain": "With six values, the median is the average of the 3rd and 4th: (4 + 5) / 2.",
+              "answer": 4.5,
+              "decimals": 1,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s43"
+      },
+      "d9": {
+        "id": "d9",
+        "name": "Skew",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "A distribution with a long tail to the right is ____-skewed.",
+              "image": null,
+              "hints": [],
+              "explain": "The tail points to where the skew is named.",
+              "blanks": [
+                [
+                  "right",
+                  "positively",
+                  "positive"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d10": {
+        "id": "d10",
+        "name": "Range",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "What is the range of 3, 9, 4, 12, 7?",
+              "image": null,
+              "hints": [],
+              "explain": "Largest minus smallest: 12 − 3.",
+              "answer": 9,
+              "decimals": 0,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d11": {
+        "id": "d11",
+        "name": "Interquartile range",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "The interquartile range covers the middle ____ percent of the data.",
+              "image": null,
+              "hints": [],
+              "explain": "From the first quartile (25%) to the third (75%).",
+              "blanks": [
+                [
+                  "50"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d12": {
+        "id": "d12",
+        "name": "Box plots",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "Which plot shows the five-number summary?",
+              "image": null,
+              "hints": [],
+              "explain": "Minimum, Q1, median, Q3 and maximum are the box and its whiskers.",
+              "options": [
+                {
+                  "text": "Histogram",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Scatter plot",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Box plot",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Pie chart",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d13": {
+        "id": "d13",
+        "name": "An even roll",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "A fair six-sided die is rolled once. What is the probability of an even number?",
+              "image": null,
+              "hints": [],
+              "explain": "Three of the six faces are even.",
+              "answer": 0.5,
+              "decimals": 1,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d14": {
+        "id": "d14",
+        "name": "Two heads",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "Two fair coins are tossed. What is the probability of two heads?",
+              "image": null,
+              "hints": [],
+              "explain": "One outcome of four: HH, HT, TH, TT.",
+              "answer": 0.25,
+              "decimals": 2,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s50"
+      },
+      "d15": {
+        "id": "d15",
+        "name": "Independence",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "If A and B are independent, P(A and B) equals ____.",
+              "image": null,
+              "hints": [],
+              "explain": "For independent events, multiply.",
+              "blanks": [
+                [
+                  "P(A)P(B)",
+                  "P(A)*P(B)",
+                  "P(A) × P(B)"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d16": {
+        "id": "d16",
+        "name": "Mutually exclusive",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "Events that cannot happen at the same time are called:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Independent",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Complementary",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Conditional",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Mutually exclusive",
+                  "correct": true,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d17": {
+        "id": "d17",
+        "name": "Complements",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "P(A) = 0.3. What is P(not A)?",
+              "image": null,
+              "hints": [],
+              "explain": "The probabilities of an event and its complement add to 1.",
+              "answer": 0.7,
+              "decimals": 1,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d18": {
+        "id": "d18",
+        "name": "Conditional probability",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "P(A | B) means the probability of:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "A or B",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "A, given that B happened",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "B, given that A happened",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "A and B together",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d19": {
+        "id": "d19",
+        "name": "One standard deviation",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "In a normal distribution, about what share of values lie within one standard deviation of the mean?",
+              "image": null,
+              "hints": [],
+              "explain": "The 68–95–99.7 rule.",
+              "options": [
+                {
+                  "text": "50%",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "68%",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "95%",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "99.7%",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d20": {
+        "id": "d20",
+        "name": "z-scores",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "A z-score of 2 means the value is two ____ above the mean.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "standard deviations",
+                  "SDs",
+                  "standard deviation"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s57"
+      },
+      "d21": {
+        "id": "d21",
+        "name": "Counting heads",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "The number of heads in 10 fair coin flips follows which distribution?",
+              "image": null,
+              "hints": [],
+              "explain": "A fixed number of independent yes/no trials.",
+              "options": [
+                {
+                  "text": "Normal",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Poisson",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Binomial",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Uniform",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d22": {
+        "id": "d22",
+        "name": "Binomial mean",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "What is the mean of a binomial distribution with n = 20 and p = 0.3?",
+              "image": null,
+              "hints": [],
+              "explain": "n × p = 20 × 0.3.",
+              "answer": 6,
+              "decimals": 0,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d23": {
+        "id": "d23",
+        "name": "Area under the curve",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "The total area under any probability density curve equals ____.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "1"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d24": {
+        "id": "d24",
+        "name": "Rare events",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "Which distribution models counts of rare events in a fixed interval?",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Poisson",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Binomial",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Normal",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Uniform",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d25": {
+        "id": "d25",
+        "name": "Confidence intervals",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "What does a 95% confidence interval for a mean mean?",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "95% of the data lie inside it",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "The sample mean is 95% likely to be inside it",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "The method captures the true mean in 95% of samples",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "The true mean changes 5% of the time",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d26": {
+        "id": "d26",
+        "name": "Sample size",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "A larger sample makes a confidence interval:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Wider",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Narrower",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "No different",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Biased",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s64"
+      },
+      "d27": {
+        "id": "d27",
+        "name": "Standard error",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "The standard error of the mean is the standard deviation divided by the square root of ____.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "n",
+                  "the sample size"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d28": {
+        "id": "d28",
+        "name": "Computing it",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "A sample of 100 has a standard deviation of 20. What is the standard error of the mean?",
+              "image": null,
+              "hints": [],
+              "explain": "20 / √100.",
+              "answer": 2,
+              "decimals": 0,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d29": {
+        "id": "d29",
+        "name": "Unbiased",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "An estimator whose expected value equals the parameter is called ____.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "unbiased"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d30": {
+        "id": "d30",
+        "name": "Critical value",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "For a 95% interval from a normal model, the critical value z* is about:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "answer": 1.96,
+              "decimals": 2,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d31": {
+        "id": "d31",
+        "name": "p-values",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "A p-value is the probability of:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "The null hypothesis being true",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Data at least as extreme as observed, if the null is true",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "A Type II error",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "The alternative being true",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d32": {
+        "id": "d32",
+        "name": "Type I",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "Rejecting a true null hypothesis is a Type ____ error.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "I",
+                  "1",
+                  "one"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s71"
+      },
+      "d33": {
+        "id": "d33",
+        "name": "Deciding",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "With α = 0.05 and p = 0.03, you:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Reject the null hypothesis",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Fail to reject it",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Prove the alternative",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Raise α",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d34": {
+        "id": "d34",
+        "name": "Power",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "The power of a test is the probability of:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "A Type I error",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Failing to reject the null",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Rejecting the null when it is false",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "A p-value under 0.5",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d35": {
+        "id": "d35",
+        "name": "Two means",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "To compare the means of two independent groups, a common choice is the two-sample ____ test.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "t"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d36": {
+        "id": "d36",
+        "name": "Chi-square",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "A chi-square test of independence uses data arranged in a:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Scatter plot",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Time series",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Box plot",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Contingency table",
+                  "correct": true,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d37": {
+        "id": "d37",
+        "name": "Slope",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "number",
+              "text": "In y = 3 + 2x, what is the slope?",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "answer": 2,
+              "decimals": 0,
+              "tolerance": null,
+              "units": ""
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d38": {
+        "id": "d38",
+        "name": "Correlation",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "The correlation coefficient r ranges from ____ to 1.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "-1",
+                  "−1"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s78"
+      },
+      "d39": {
+        "id": "d39",
+        "name": "Strong and negative",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "r = −0.9 indicates:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "A weak positive relationship",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "A strong negative relationship",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "No relationship",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "Causation",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d40": {
+        "id": "d40",
+        "name": "R-squared",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "An R² of 0.64 means 64% of the variation in y is ____ by the model.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "explained",
+                  "accounted for"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d41": {
+        "id": "d41",
+        "name": "Residuals",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "choice",
+              "text": "A residual is:",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "options": [
+                {
+                  "text": "Observed minus predicted",
+                  "correct": true,
+                  "feedback": ""
+                },
+                {
+                  "text": "Predicted minus the mean",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "The slope’s error",
+                  "correct": false,
+                  "feedback": ""
+                },
+                {
+                  "text": "The intercept",
+                  "correct": false,
+                  "feedback": ""
+                }
+              ],
+              "shuffle": "default"
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d42": {
+        "id": "d42",
+        "name": "Beyond the data",
+        "description": "",
+        "role": "assess",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": {
+          "title": "",
+          "target": "",
+          "context": "",
+          "items": [
+            {
+              "type": "q",
+              "id": "q1",
+              "kind": "blank",
+              "text": "Predicting outside the range of the observed x values is called ____.",
+              "image": null,
+              "hints": [],
+              "explain": "",
+              "blanks": [
+                [
+                  "extrapolation"
+                ]
+              ],
+              "ignoreCase": false
+            }
+          ]
+        },
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      }
+    },
+    "shelf": [],
+    "retired": [],
+    "blocks": [],
+    "waits": {},
+    "lists": {
+      "k1": [
+        "d7",
+        "d8",
+        "d9",
+        "d10",
+        "d11",
+        "d12"
+      ],
+      "k2": [
+        "d13",
+        "d14",
+        "d15",
+        "d16",
+        "d17",
+        "d18"
+      ],
+      "k3": [
+        "d19",
+        "d20",
+        "d21",
+        "d22",
+        "d23",
+        "d24"
+      ],
+      "k4": [
+        "d25",
+        "d26",
+        "d27",
+        "d28",
+        "d29",
+        "d30"
+      ],
+      "k5": [
+        "d31",
+        "d32",
+        "d33",
+        "d34",
+        "d35",
+        "d36"
+      ],
+      "k6": [
+        "d37",
+        "d38",
+        "d39",
+        "d40",
+        "d41",
+        "d42"
+      ]
+    },
+    "goals": {},
+    "complete": {},
+    "seed": ""
+  },
+  "board": "free",
+  "share": 100,
+  "gap": 30,
+  "pin": null,
+  "designs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

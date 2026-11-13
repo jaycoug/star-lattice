@@ -1,0 +1,9 @@
+# Line endings: LF everywhere (the checks run on Linux), CRLF for the Windows launchers.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.vbs text eol=crlf
+
+# Never touched by Git
+*.png binary
+*.ico binary
+*.woff2 binary

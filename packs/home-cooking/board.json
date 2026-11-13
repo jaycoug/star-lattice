@@ -1,0 +1,2027 @@
+{
+  "format": "star-lattice-save",
+  "version": 8,
+  "content": "home-cooking",
+  "title": "Home cooking skill tree",
+  "state": {
+    "version": 1,
+    "nextId": 97,
+    "stars": {
+      "s0": {
+        "id": "s0",
+        "n": 0,
+        "sources": [],
+        "kites": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s11": {
+        "id": "s11",
+        "n": 11,
+        "sources": [
+          "d10"
+        ],
+        "kites": [
+          "k12",
+          "k13",
+          "k14",
+          "k15",
+          "k16",
+          "k17"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s26": {
+        "id": "s26",
+        "n": 26,
+        "sources": [
+          "d25"
+        ],
+        "kites": [
+          "k27",
+          "k28",
+          "k29",
+          "k30",
+          "k31",
+          "k32"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s41": {
+        "id": "s41",
+        "n": 41,
+        "sources": [
+          "d40"
+        ],
+        "kites": [
+          "k42",
+          "k43",
+          "k44",
+          "k45",
+          "k46",
+          "k47"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s56": {
+        "id": "s56",
+        "n": 56,
+        "sources": [
+          "d55"
+        ],
+        "kites": [
+          "k57",
+          "k58",
+          "k59",
+          "k60",
+          "k61",
+          "k62"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s71": {
+        "id": "s71",
+        "n": 71,
+        "sources": [
+          "d70"
+        ],
+        "kites": [
+          "k72",
+          "k73",
+          "k74",
+          "k75",
+          "k76",
+          "k77"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s86": {
+        "id": "s86",
+        "n": 86,
+        "sources": [
+          "d85"
+        ],
+        "kites": [
+          "k87",
+          "k88",
+          "k89",
+          "k90",
+          "k91",
+          "k92"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      }
+    },
+    "kites": {
+      "k1": {
+        "id": "k1",
+        "name": "Knife skills",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d7",
+          "d8",
+          "d10",
+          "d9"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k2": {
+        "id": "k2",
+        "name": "Heat",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d22",
+          "d23",
+          "d25",
+          "d24"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k3": {
+        "id": "k3",
+        "name": "Baking",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d37",
+          "d38",
+          "d40",
+          "d39"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k4": {
+        "id": "k4",
+        "name": "Sauces",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d52",
+          "d53",
+          "d55",
+          "d54"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k5": {
+        "id": "k5",
+        "name": "Flavor",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d67",
+          "d68",
+          "d70",
+          "d69"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k6": {
+        "id": "k6",
+        "name": "Planning",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d82",
+          "d83",
+          "d85",
+          "d84"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k12": {
+        "id": "k12",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k13": {
+        "id": "k13",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d21",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k14": {
+        "id": "k14",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d19",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k15": {
+        "id": "k15",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d18",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k16": {
+        "id": "k16",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d20",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k17": {
+        "id": "k17",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k27": {
+        "id": "k27",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k28": {
+        "id": "k28",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d36",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k29": {
+        "id": "k29",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d34",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k30": {
+        "id": "k30",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d33",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k31": {
+        "id": "k31",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d35",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k32": {
+        "id": "k32",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k42": {
+        "id": "k42",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k43": {
+        "id": "k43",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d51",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k44": {
+        "id": "k44",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d49",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k45": {
+        "id": "k45",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d48",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k46": {
+        "id": "k46",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d50",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k47": {
+        "id": "k47",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k57": {
+        "id": "k57",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k58": {
+        "id": "k58",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d66",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k59": {
+        "id": "k59",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d64",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k60": {
+        "id": "k60",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d63",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k61": {
+        "id": "k61",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d65",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k62": {
+        "id": "k62",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k72": {
+        "id": "k72",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k73": {
+        "id": "k73",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d81",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k74": {
+        "id": "k74",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d79",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k75": {
+        "id": "k75",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d78",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k76": {
+        "id": "k76",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d80",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k77": {
+        "id": "k77",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k87": {
+        "id": "k87",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k88": {
+        "id": "k88",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d96",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k89": {
+        "id": "k89",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d94",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k90": {
+        "id": "k90",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d93",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k91": {
+        "id": "k91",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d95",
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k92": {
+        "id": "k92",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      }
+    },
+    "dots": {
+      "d7": {
+        "id": "d7",
+        "name": "Hold a knife safely",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794320647886,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d8": {
+        "id": "d8",
+        "name": "Dice an onion",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d9": {
+        "id": "d9",
+        "name": "Mince garlic",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d10": {
+        "id": "d10",
+        "name": "Julienne",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s11"
+      },
+      "d18": {
+        "id": "d18",
+        "name": "Chiffonade herbs",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d19": {
+        "id": "d19",
+        "name": "Supreme a citrus",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d20": {
+        "id": "d20",
+        "name": "Break down a chicken",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d21": {
+        "id": "d21",
+        "name": "Fillet a fish",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d22": {
+        "id": "d22",
+        "name": "Boil and simmer",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794320647886,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d23": {
+        "id": "d23",
+        "name": "Sauté",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d24": {
+        "id": "d24",
+        "name": "Roast vegetables",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d25": {
+        "id": "d25",
+        "name": "Sear a steak",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s26"
+      },
+      "d33": {
+        "id": "d33",
+        "name": "Pan sauce from the fond",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d34": {
+        "id": "d34",
+        "name": "Rest and slice",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d35": {
+        "id": "d35",
+        "name": "Reverse sear",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d36": {
+        "id": "d36",
+        "name": "Cook to temperature",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d37": {
+        "id": "d37",
+        "name": "Measure by weight",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794320647886,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d38": {
+        "id": "d38",
+        "name": "Quick bread",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d39": {
+        "id": "d39",
+        "name": "Shortbread",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d40": {
+        "id": "d40",
+        "name": "Yeast bread",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s41"
+      },
+      "d48": {
+        "id": "d48",
+        "name": "Knead and proof",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d49": {
+        "id": "d49",
+        "name": "Shape a loaf",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d50": {
+        "id": "d50",
+        "name": "Focaccia",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d51": {
+        "id": "d51",
+        "name": "Sourdough starter",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d52": {
+        "id": "d52",
+        "name": "Vinaigrette",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d53": {
+        "id": "d53",
+        "name": "Tomato sauce",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d54": {
+        "id": "d54",
+        "name": "Pan gravy",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d55": {
+        "id": "d55",
+        "name": "Béchamel",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s56"
+      },
+      "d63": {
+        "id": "d63",
+        "name": "Cheese sauce",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d64": {
+        "id": "d64",
+        "name": "Velouté",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d65": {
+        "id": "d65",
+        "name": "Hollandaise",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d66": {
+        "id": "d66",
+        "name": "Beurre blanc",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d67": {
+        "id": "d67",
+        "name": "Season with salt",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794320647886,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d68": {
+        "id": "d68",
+        "name": "Balance with acid",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d69": {
+        "id": "d69",
+        "name": "Toast whole spices",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d70": {
+        "id": "d70",
+        "name": "Blend your own spices",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s71"
+      },
+      "d78": {
+        "id": "d78",
+        "name": "Garam masala",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d79": {
+        "id": "d79",
+        "name": "Za’atar",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d80": {
+        "id": "d80",
+        "name": "Taste and adjust",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d81": {
+        "id": "d81",
+        "name": "Make a marinade",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d82": {
+        "id": "d82",
+        "name": "Read a recipe through",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": true,
+        "ignitedAt": 1794320647886,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d83": {
+        "id": "d83",
+        "name": "Mise en place",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d84": {
+        "id": "d84",
+        "name": "Plan a week of meals",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d85": {
+        "id": "d85",
+        "name": "Cook a three-course dinner",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s86"
+      },
+      "d93": {
+        "id": "d93",
+        "name": "Write the menu",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d94": {
+        "id": "d94",
+        "name": "Shopping list",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "easy",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d95": {
+        "id": "d95",
+        "name": "Timeline back from serving",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "medium",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d96": {
+        "id": "d96",
+        "name": "Host it",
+        "description": "",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": "hard",
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      }
+    },
+    "shelf": [],
+    "retired": [],
+    "blocks": [],
+    "waits": {},
+    "lists": {
+      "k1": [
+        "d7",
+        "d8",
+        "d9",
+        "d10",
+        "d18",
+        "d19",
+        "d20",
+        "d21"
+      ],
+      "k2": [
+        "d22",
+        "d23",
+        "d24",
+        "d25",
+        "d33",
+        "d34",
+        "d35",
+        "d36"
+      ],
+      "k3": [
+        "d37",
+        "d38",
+        "d39",
+        "d40",
+        "d48",
+        "d49",
+        "d50",
+        "d51"
+      ],
+      "k4": [
+        "d52",
+        "d53",
+        "d54",
+        "d55",
+        "d63",
+        "d64",
+        "d65",
+        "d66"
+      ],
+      "k5": [
+        "d67",
+        "d68",
+        "d69",
+        "d70",
+        "d78",
+        "d79",
+        "d80",
+        "d81"
+      ],
+      "k6": [
+        "d82",
+        "d83",
+        "d84",
+        "d85",
+        "d93",
+        "d94",
+        "d95",
+        "d96"
+      ]
+    },
+    "goals": {},
+    "complete": {},
+    "seed": ""
+  },
+  "board": "free",
+  "share": 100,
+  "gap": 30,
+  "pin": null,
+  "designs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

@@ -1,0 +1,12 @@
+# Yours, never pushed: your boards and content sets (the app writes them here; a fresh copy
+# starts from packs/), and local/ (study sources, notes, archive, Make a repo… manifests).
+# Anchored to the top folder, so test/fixtures/saves and content (anonymized) do ship.
+/saves/
+/content/
+/local/
+# The upcoming development plans (they name your own material).
+/dev.md
+
+# Built files (python tools/single_file.py) and Python's caches
+/dist/
+__pycache__/

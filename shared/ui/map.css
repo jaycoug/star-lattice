@@ -1,0 +1,237 @@
+/* The starfield map (map.js): a dark sky in every theme, like the original app. The host sizes .sl-map. */
+
+.sl-map {
+  --map-bg: #111820;
+  --map-ink: #e4e9f0;
+  --map-muted: #8d99a8;
+  --map-gold: #e6b93c;
+  --map-lattice: rgb(90 122 156 / 0.25);
+  --map-lattice-star: #5a7a9c;
+  --map-locked: #2a333d;
+  --map-target: #8fe3a5;
+  --map-up: #7fb2ff;
+  --map-down: #7fe0a8;
+  display: block; width: 100%; height: 100%;
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+}
+.sl-map:active { cursor: grabbing; }
+.sl-map.picking { cursor: crosshair; }
+.sl-map .map-bg { fill: var(--map-bg); }
+.sl-map .hit, .sl-map .dot-hit { fill: transparent; }
+
+/* Lattice, positions, markers */
+.sl-map .lattice { stroke: var(--map-lattice); }
+.sl-map .lattice-star { stroke: var(--map-lattice-star); }
+.sl-map .lattice-point { fill: none; stroke: var(--map-lattice); }
+.sl-map .pos { cursor: pointer; }
+.sl-map .pos:hover .lattice-point, .sl-map .pos.selected .lattice-point { stroke: var(--map-ink); }
+.sl-map .pos.selected .lattice-point { fill: rgb(255 255 255 / 0.2); }
+/* Background lattice: Hidden (GOVERN › Look): no lines; a position's point only on hover or when selected. */
+.sl-map .pos.quiet:not(:hover):not(.selected) .lattice-point { display: none; }
+/* The central star's own dot, opening its screen. */
+.sl-map .central-dot { cursor: pointer; }
+.sl-map .central-dot-mark { fill: #ffffff; stroke: var(--map-bg); stroke-width: 2; }   /* White */
+.sl-map .central-dot:hover .central-dot-mark, .sl-map .central-dot.selected .central-dot-mark { stroke: var(--map-gold); }
+.sl-map.constellation .central-dot { opacity: 0.3; }
+
+/* Kites and star-dots */
+.sl-map .kite { stroke: var(--map-bg); stroke-width: 1; cursor: pointer; }
+.sl-map .kite.locked { fill: var(--map-locked); stroke: #3a4652; stroke-dasharray: 3 3; }
+.sl-map .kite.selected { stroke: #fff; stroke-width: 2.5; }
+.sl-map .kite.source { stroke: var(--map-gold); stroke-width: 2.5; }
+.sl-map .kite.target { stroke: var(--map-target); stroke-width: 2; }
+.sl-map .dot { cursor: pointer; }
+.sl-map .dot-ring { fill: none; stroke: #fff; stroke-width: 1.5; }
+.sl-map .dot-over { fill: none; stroke: var(--dot); stroke-width: 1; stroke-dasharray: 1.5 1.5; pointer-events: none; }   /* Over the per-star count */
+.sl-map .dot.source .dot-ring { stroke: var(--map-gold); }
+.sl-map .dot.target .dot-ring { stroke: var(--map-target); stroke-dasharray: 2 2; }
+.sl-map .dot-empty { fill: none; stroke: rgb(255 255 255 / 0.55); stroke-width: 1; }   /* a star-dot with no task */
+.sl-map .dot-slot { fill: rgb(255 255 255 / 0.5); stroke: none; }   /* An empty slot */
+/* A kite with no star-dots: a dashed outline in its color (--kite-stroke, set inline; the
+   plain .kite rule above would otherwise paint it the background's color), always shown, inert unless a kite is being swapped. */
+.sl-map .kite.empty { stroke: var(--kite-stroke, #9aa4b2); stroke-width: 1.2; stroke-dasharray: 4 3; stroke-opacity: 0.85; cursor: default; }
+.sl-map .kite.empty[data-hit] { cursor: pointer; }
+.sl-map .kite.empty.target { stroke: var(--map-target); stroke-opacity: 1; stroke-width: 2; }
+/* With questions on, a Zenith waiting for the star-dots inside it. */
+.sl-map .dot-lock-body { fill: #e8edf3; stroke: var(--map-bg); stroke-width: 0.8; }
+.sl-map .dot-lock-shackle { fill: none; stroke: #e8edf3; stroke-width: 1.3; }
+.sl-map .dot.q-faded .dot-lock { opacity: 1; }
+.sl-map .dot-star { fill: none; stroke: #fff; stroke-width: 1; stroke-linejoin: round; }
+.sl-map .dot-circle { fill: none; stroke: #fff; stroke-width: 1; }   /* A star-dot that can't deploy */
+.sl-map .dot-half { stroke: none; }
+.sl-map .dot.locked { opacity: 0.5; }
+.sl-map .dot.role-dim { opacity: 0.3; }
+.sl-map .dot.role-focus .dot-ring { stroke: #fff; stroke-width: 2.5; }
+.sl-map .dot.role-up .dot-ring, .sl-map .dot.role-up-far .dot-ring { stroke: var(--map-up); }
+.sl-map .dot.role-down .dot-ring, .sl-map .dot.role-down-far .dot-ring { stroke: var(--map-down); }
+.sl-map .dot.role-up-far .dot-ring, .sl-map .dot.role-down-far .dot-ring { stroke-dasharray: 2 2; }
+.sl-map .dot.role-implicit .dot-ring { stroke: var(--map-gold); stroke-dasharray: 1 2; }
+.sl-map.dragging .dot:not(.target):not(.source) { opacity: 0.35; }
+.sl-map .drag-ghost { fill: rgb(255 255 255 / 0.25); stroke: #fff; stroke-width: 1.5; pointer-events: none; }
+
+/* Relation arrows (the constellation layer) */
+.sl-map .rel, .sl-map .reveal-line { pointer-events: none; }
+/* A relation line: a wider, unseen stroke to hover and click; hovered, it brightens and sparkles. */
+.sl-map .rel-hit { stroke: transparent; stroke-width: 9; stroke-linecap: round; pointer-events: stroke; cursor: pointer; }
+.sl-map .rel.hover, .sl-map .reveal-line.hover { opacity: 1 !important; }
+.sl-map .shine-glow { stroke: #ffffff; stroke-width: 7; stroke-linecap: round; opacity: 0.16; filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); }
+.sl-map .shine-fleck { opacity: 0.8; }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .shine-fleck { opacity: 0; animation: sl-shine-drift 1.6s ease-out infinite; }
+  .sl-map .shine-fleck.s1 { animation-duration: 2.1s; }
+  .sl-map .shine-fleck.s2 { animation-duration: 1.3s; }
+}
+@keyframes sl-shine-drift { 0% { transform: translate(0, 0); opacity: 0; } 25% { opacity: 1; } 100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+/* 9e, Nebula fog: a dark haze over the empty sky past the stars, with slow-drifting nebula puffs and faint flecks. */
+.sl-map .fog-base { fill: #070a16; opacity: 0.86; }
+.sl-map .fog-fleck { fill: #e8ecff; opacity: 0.5; }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .fog-puff { animation: sl-fog-drift 26s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  .sl-map .fog-puff.d1 { animation-duration: 34s; animation-direction: alternate-reverse; }
+  .sl-map .fog-fleck { animation: sl-reveal-spark 3.4s ease-in-out infinite; }
+  .sl-map .fog-fleck.s1 { animation-duration: 4.6s; }
+}
+@keyframes sl-fog-drift { from { transform: translate(-6px, 3px) scale(0.96); } to { transform: translate(6px, -3px) scale(1.06); } }
+/* 9e, Streaks: the lit star-dots glow and twinkle while the player keeps answering right. */
+.sl-map.streak .dot.ignited .dot-star, .sl-map.streak .dot.ignited .dot-circle { filter: drop-shadow(0 0 2.5px #ffffff) drop-shadow(0 0 5px var(--dot)); }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map.streak .dot.ignited .dot-star, .sl-map.streak .dot.ignited .dot-circle { animation: sl-streak 1.6s ease-in-out infinite; }
+  .sl-map.streak[data-streak="5"] .dot.ignited .dot-star, .sl-map.streak[data-streak="5"] .dot.ignited .dot-circle { animation-duration: 1.05s; }
+  .sl-map.streak[data-streak="10"] .dot.ignited .dot-star, .sl-map.streak[data-streak="10"] .dot.ignited .dot-circle { animation-duration: 0.7s; }
+}
+@keyframes sl-streak { 0%, 100% { filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 2px var(--dot)); } 50% { filter: drop-shadow(0 0 4px #ffffff) drop-shadow(0 0 9px var(--dot)); } }
+/* The kite finish (Design › Look): over plain kites only. */
+.sl-map .facet.lit { fill: #ffffff; }
+.sl-map .facet.shade { fill: #000000; }
+.sl-map .facet-ridge { stroke: #ffffff; stroke-opacity: 0.35; stroke-width: 0.7; }
+.sl-map .finish-rim { fill: none; stroke: #ffffff; stroke-opacity: 0.5; stroke-width: 0.9; stroke-linejoin: round; }
+.sl-map .kite-finish.bare .finish-rim { stroke-opacity: 0.3; }
+.sl-map .kite-finish.bare .glass, .sl-map .kite-finish.bare .facet { opacity: 0.5; }
+.sl-map .core-glow { fill: #ffffff; opacity: 0.22; filter: blur(1.5px); }
+.sl-map .core-flare { stroke: #ffffff; stroke-opacity: 0.6; stroke-width: 0.7; stroke-linecap: round; }
+.sl-map .core-dot { fill: #ffffff; }
+.sl-map.constellation .kite-finish { opacity: 0.08; }
+/* The starry background (Design › Fun): two depths, twinkling in three tempos; still under reduce-motion. */
+.sl-map .sky-star { opacity: 0.7; }
+.sl-map .sky-depth.d0 .sky-star, .sl-map .sky-depth.d0 { opacity: 0.75; }
+.sl-map .sky-star.glow { filter: drop-shadow(0 0 2px #ffffff); }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .sky-star { animation: sl-sky-twinkle 4.2s ease-in-out infinite; }
+  .sl-map .sky-star.t1 { animation-duration: 6.1s; }
+  .sl-map .sky-star.t2 { animation-duration: 8.3s; }
+}
+@keyframes sl-sky-twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
+/* A clicked relation's label. */
+.sl-map .rel-label { cursor: pointer; }
+.sl-map .rel-label-box { fill: rgb(14 18 38 / 0.94); stroke: rgb(255 255 255 / 0.55); stroke-width: 1; }
+.sl-map .rel-label-head { fill: #c9d2f0; font: 600 10.5px system-ui, sans-serif; user-select: none; }
+.sl-map .rel-label-text { fill: #ffffff; font: 600 12.5px system-ui, sans-serif; user-select: none; }
+.sl-map .rel-label-text.none { fill: #9aa4c2; font-style: italic; font-weight: 400; }
+/* 9e: the layer just turned on: each arrow travels from its origin to its target, one after another. */
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .rel.travel line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: sl-rel-travel 1s ease-out var(--d, 0s) forwards; }
+  .sl-map .rel.travel polygon { opacity: 0; animation: sl-rel-head 0.25s ease-out calc(var(--d, 0s) + 0.9s) forwards; }
+}
+@keyframes sl-rel-travel { to { stroke-dashoffset: 0; } }
+@keyframes sl-rel-head { to { opacity: 1; } }
+
+/* Constellation view: kites and stars sink into a darker sky; star-dots glow by their relations (inline opacity). */
+.sl-map.constellation { --map-bg: #05080c; }
+.sl-map.constellation .kite, .sl-map.constellation .kite-design { opacity: 0.08; }
+.sl-map.constellation .lattice, .sl-map.constellation .lattice-star, .sl-map.constellation .lattice-point { opacity: 0.25; }
+.sl-map.constellation .dot-star, .sl-map.constellation .dot-circle { stroke: #fff; }
+
+/* Pills beside the selected star-dot (Open, Deploy or Withdraw). */
+.sl-map .dot-pill { cursor: pointer; }
+.sl-map .dot-pill rect { fill: rgb(17 24 32 / 0.92); stroke: var(--map-ink); stroke-width: 1; }
+.sl-map .dot-pill text { fill: var(--map-ink); font: 600 11.5px system-ui, sans-serif; text-anchor: middle; pointer-events: none; }
+.sl-map .dot-pill:hover rect { fill: #24303d; }
+.sl-map .dot-pill.deploy rect { stroke: var(--map-gold); }
+.sl-map .dot-pill.deploy text { fill: var(--map-gold); }
+
+/* With questions on, a star-dot is fully faded until answered correctly, then in full color. */
+.sl-map .dot.q-faded { opacity: 0.28; }
+.sl-map .dot.q-faded:hover { opacity: 0.55; }
+.sl-map .dot.q-lit .dot-star, .sl-map .dot.q-lit .dot-circle { stroke: #fff; stroke-width: 0.6; }
+.sl-map .dot.q-faded, .sl-map .dot.q-lit { cursor: pointer; }
+
+/* Round 9, the goal star-dot has no ring: its fill fades between a dim and the
+   full tone of its color (--dot, from map.js). A completed category's kites and stars are filled and
+   twinkle between their color (--c) and clear (round 12: fading into the background), in three phases over the lattice (animation-delay, from
+   map.js), so neighbors are never in step. Neither moves under reduce-motion. */
+.sl-map .dot.q-goal { opacity: 1; }
+.sl-map .dot.q-goal .dot-star, .sl-map .dot.q-goal .dot-circle { fill: color-mix(in oklab, var(--dot) 55%, var(--map-bg)); }
+.sl-map .kite.complete { stroke: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .dot.q-goal .dot-star, .sl-map .dot.q-goal .dot-circle { animation: sl-goal var(--goal-period, 6500ms) ease-in-out infinite; }
+  .sl-map .kite.complete { animation: sl-twinkle var(--twinkle-period, 5200ms) ease-in-out infinite; }
+  .sl-map .kite-design.complete { animation: sl-twinkle-all var(--twinkle-period, 5200ms) ease-in-out infinite; }
+  .sl-map .kite.complete.designed { animation-name: none; }
+}
+/* A star-dot with a Due date, not complete: its symbol fades to clear and back, faster the sooner it's due. */
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .dot.due .dot-star, .sl-map .dot.due .dot-circle, .sl-map .dot.due .dot-half, .sl-map .dot.due .dot-empty { animation: sl-due 2600ms ease-in-out infinite; }
+  .sl-map .dot.due-fast > :not(title):not(.dot-hit):not(.dot-ring) { animation-duration: 1300ms; }
+  .sl-map .dot.due-normal > :not(title):not(.dot-hit):not(.dot-ring) { animation-duration: 2600ms; }
+  .sl-map .dot.due-slow > :not(title):not(.dot-hit):not(.dot-ring) { animation-duration: 5200ms; }
+  .sl-map .dot.due-veryslow > :not(title):not(.dot-hit):not(.dot-ring) { animation-duration: 10400ms; }
+}
+@keyframes sl-due { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes sl-goal { 0%, 100% { fill: color-mix(in oklab, var(--dot) 12%, var(--map-bg)); } 50% { fill: var(--dot); } }
+@keyframes sl-twinkle { 0%, 100% { fill-opacity: 1; } 50% { fill-opacity: 0; } }
+@keyframes sl-twinkle-all { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+/* A completed kite with a design: the design twinkles in its place (the plain fill under it is clear, but takes the clicks). */
+.sl-map .kite.complete.designed { fill-opacity: 0; }
+
+/* A kite-less star's own shape: faint, in its category's color, under its star-dots. */
+.sl-map .kiteless-star { fill-opacity: 0.16; stroke-opacity: 0.75; stroke-width: 1.2; }
+.sl-map.constellation .kiteless-star { fill-opacity: 0.05; stroke-opacity: 0.15; }
+
+/* 9a, moments (map.js drives them frame by frame; none under reduce-motion): a burst's ring and
+   rays in its category's color, a supernova's kites flooding out and its ring. */
+.sl-map .layer-fx { pointer-events: none; }
+.sl-map .fx-ring { fill: none; stroke-width: 2; }
+.sl-map .fx-ray { stroke-width: 2; stroke-linecap: round; }
+.sl-map .fx-burst.zenith .fx-ring, .sl-map .fx-burst.zenith .fx-ray { stroke-width: 3; }
+.sl-map .fx-flood { stroke: none; }
+.sl-map .fx-nova-ring { fill: none; stroke: #fff6d8; stroke-width: 3; }
+
+/* 9b, the bonus ladder's prize: an icon alone in a glowing badge on an empty position. */
+.sl-map .prize { cursor: pointer; }
+.sl-map .prize-glow { fill: #ffd27a; opacity: 0.18; }
+.sl-map .prize-badge { fill: color-mix(in oklab, #ffd27a 30%, var(--map-bg)); stroke: #ffd27a; stroke-width: 2; }
+.sl-map .prize-icon { fill: #fff6d8; pointer-events: none; user-select: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .prize-glow { animation: sl-prize 1.8s ease-in-out infinite; }
+}
+@keyframes sl-prize { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.35; } }
+
+/* 9c, Spin the star: the pointer over the star's top, and each kite's outcome while it turns. */
+.sl-map .spin-pointer { fill: #fff6d8; stroke: #ffd27a; stroke-width: 1.5; }
+.sl-map .spin-icon { fill: #fff6d8; user-select: none; }
+
+/* 9d: a comet in the sky: a glowing head, its message inside a tail of white sparkling dust
+   (sky.js: a tapering gradient no taller than the head, twinkling flecks). Prize comets: a ✦ head,
+   gold flecks; the player's own: pink. */
+.sl-map .comet-head { fill: #ffffff; }
+.sl-map .comet-glow { fill: #ffffff; opacity: 0.55; }
+.sl-map .comet-tail { stroke: none; }
+.sl-map .comet-text { fill: #141a33; font-size: 11px; font-weight: 600; letter-spacing: 0.01em; user-select: none; }
+.sl-map .prize-comet .comet-star { fill: #fffbe8; font-size: 16px; }
+.sl-map .prize-comet .comet-glow { fill: #ffd27a; opacity: 0.55; }
+.sl-map .prize-comet.mine .comet-glow { fill: #ff9fb6; }
+
+/* 9e, Constellation reveal: related star-dots both ignited, joined by a thin bright white line in a
+   faint haze of the comets' sparkling dust, with small arrowheads; one just revealed draws itself,
+   brighter, from end to end. Kept quiet, so the constellations' pattern reads, not the lines. */
+.sl-map .reveal-core { stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round; opacity: 0.9; }
+.sl-map .reveal-dust { stroke: #ffffff; stroke-width: 5; stroke-linecap: round; opacity: 0.07; }
+.sl-map .reveal-head { fill: none; stroke: #ffffff; stroke-width: 0.9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.9; }
+.sl-map .reveal-spark { opacity: 0.55; }
+.sl-map .reveal-draw { stroke: #ffffff; stroke-width: 1.6; stroke-linecap: round; filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.85)); }
+@media (prefers-reduced-motion: no-preference) {
+  .sl-map .reveal-spark { animation: sl-reveal-spark 2.6s ease-in-out infinite; }
+  .sl-map .reveal-spark.s1 { animation-duration: 3.4s; }
+  .sl-map .reveal-spark.s2 { animation-duration: 4.1s; }
+}
+@keyframes sl-reveal-spark { 0%, 100% { opacity: 0.12; } 50% { opacity: 0.85; } }

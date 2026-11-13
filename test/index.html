@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Lattice Tests</title>
+  <style>
+    :root { --bg: #ffffff; --fg: #1d2330; --muted: #6b7385; --pass: #1f8a4c; --fail: #c62f3c; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111820; --fg: #dde3ec; --muted: #8a94a6; --pass: #4cc47e; --fail: #ff6b78; } }
+    body { margin: 0; padding: 24px 16px; background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, sans-serif; }
+    h1 { font-size: 18px; margin: 0 0 4px; }
+    #summary { margin: 0 0 16px; color: var(--muted); }
+    #summary.pass { color: var(--pass); }
+    #summary.fail { color: var(--fail); font-weight: 600; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { padding: 2px 0; }
+    li::before { content: '✓ '; color: var(--pass); }
+    li.fail::before { content: '✗ '; color: var(--fail); }
+    li small { display: block; margin-left: 1.3em; color: var(--fail); font-family: ui-monospace, monospace; }
+  </style>
+</head>
+<body>
+  <h1>Star Lattice tests</h1>
+  <p id="summary">Running…</p>
+  <ul id="results"></ul>
+  <script type="module">
+    import { run } from './all.js';
+    const results = run();
+    const failed = results.filter(r => r.error);
+    const list = document.getElementById('results');
+    for (const r of results) {
+      const li = document.createElement('li');
+      li.textContent = r.name;
+      if (r.error) {
+        li.className = 'fail';
+        li.append(Object.assign(document.createElement('small'), { textContent: r.error }));
+      }
+      list.append(li);
+    }
+    const summary = document.getElementById('summary');
+    summary.textContent = failed.length ? `${failed.length} of ${results.length} failed` : `All ${results.length} passed`;
+    summary.className = failed.length ? 'fail' : 'pass';
+    document.title = (failed.length ? '✗ ' : '✓ ') + 'Star Lattice Tests';
+  </script>
+</body>
+</html>

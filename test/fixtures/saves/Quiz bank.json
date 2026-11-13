@@ -1,0 +1,165 @@
+{
+  "format": "star-lattice-save",
+  "version": 8,
+  "content": "quiz-bank",
+  "title": "Quiz bank",
+  "state": {
+    "version": 1,
+    "nextId": 7,
+    "stars": {
+      "s0": {
+        "id": "s0",
+        "n": 0,
+        "sources": [],
+        "kites": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      }
+    },
+    "kites": {
+      "k1": {
+        "id": "k1",
+        "name": "Numbers",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k2": {
+        "id": "k2",
+        "name": "Words",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k3": {
+        "id": "k3",
+        "name": "Places",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k4": {
+        "id": "k4",
+        "name": "Science",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k5": {
+        "id": "k5",
+        "name": "History",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k6": {
+        "id": "k6",
+        "name": "Arts",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      }
+    },
+    "dots": {},
+    "shelf": [],
+    "retired": [],
+    "blocks": [],
+    "waits": {},
+    "lists": {},
+    "goals": {},
+    "complete": {},
+    "seed": ""
+  },
+  "board": "free",
+  "share": 100,
+  "gap": 30,
+  "pin": null,
+  "designs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

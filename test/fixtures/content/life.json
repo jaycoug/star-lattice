@@ -1,0 +1,191 @@
+{
+  "format": "star-lattice-content",
+  "version": 8,
+  "id": "life",
+  "title": "Life organizer (test fixture)",
+  "categories": [
+    {
+      "name": "Work",
+      "color": "#7e47ff"
+    },
+    {
+      "name": "Skills",
+      "color": "#e800d4"
+    },
+    {
+      "name": "Home",
+      "color": "#ff009a"
+    },
+    {
+      "name": "School",
+      "color": "#ff5362"
+    },
+    {
+      "name": "Health",
+      "color": "#ff962f"
+    },
+    {
+      "name": "Fun",
+      "color": "#ffcd05"
+    }
+  ],
+  "properties": [
+    {
+      "id": "environment",
+      "name": "Environment",
+      "kind": "choice",
+      "choices": [
+        {
+          "id": "office",
+          "name": "Office",
+          "travel": false
+        },
+        {
+          "id": "kitchen",
+          "name": "Kitchen",
+          "travel": false
+        },
+        {
+          "id": "den",
+          "name": "Den",
+          "travel": false
+        },
+        {
+          "id": "local",
+          "name": "Local",
+          "travel": true
+        },
+        {
+          "id": "distant",
+          "name": "Distant",
+          "travel": true
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Financial Influence",
+      "kind": "amount"
+    },
+    {
+      "id": "persistence",
+      "name": "Retrain",
+      "kind": "choice",
+      "choices": [
+        {
+          "id": "daily",
+          "name": "Daily",
+          "days": 1
+        },
+        {
+          "id": "weekly",
+          "name": "Weekly",
+          "days": 7
+        },
+        {
+          "id": "monthly",
+          "name": "Monthly",
+          "days": 30
+        },
+        {
+          "id": "quarterly",
+          "name": "Quarterly",
+          "days": 91
+        },
+        {
+          "id": "annually",
+          "name": "Annually",
+          "days": 365
+        },
+        {
+          "id": "never",
+          "name": "Never",
+          "days": null
+        }
+      ]
+    },
+    {
+      "id": "difficulty",
+      "name": "Difficulty",
+      "kind": "choice",
+      "choices": [
+        {
+          "id": "easy",
+          "name": "Easy"
+        },
+        {
+          "id": "medium",
+          "name": "Medium"
+        },
+        {
+          "id": "hard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "id": "due",
+      "name": "Due",
+      "kind": "date"
+    }
+  ],
+  "marks": [
+    {
+      "id": "people",
+      "symbol": "☺",
+      "name": "Involves others"
+    }
+  ],
+  "relevanceNames": [
+    "Low",
+    "MedLow",
+    "Medium",
+    "MedHigh",
+    "High"
+  ],
+  "stageNames": [
+    "Nebula",
+    "Collapse",
+    "Protostar",
+    "Fusion",
+    "Main"
+  ],
+  "dotNames": [
+    "Nadir",
+    "Port",
+    "Zenith",
+    "Starboard"
+  ],
+  "start": {
+    "central": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "rules": {
+    "locks": "off",
+    "fade": "darken",
+    "twinkle": "normal",
+    "lattice": "hidden",
+    "kites": "all",
+    "stardots": "hierarchical",
+    "perStar": 24,
+    "deploy": "hand",
+    "questions": "off",
+    "wrong": {
+      "mode": "retry",
+      "minutes": 5
+    },
+    "goalAfter": 0,
+    "shuffleChoices": "off",
+    "shuffleQuestions": "off"
+  },
+  "terms": {
+    "stardot": "star-dot",
+    "stardots": "star-dots"
+  }
+}

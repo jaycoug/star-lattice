@@ -1,0 +1,23 @@
+# Star Lattice's checks on every push and pull request (stage 5). No dependencies to install:
+# Node and Python run the checks, and the runner's own Chrome runs the browser ones.
+name: checks
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests and click-throughs (on test/fixtures)
+        run: sh test/headless/run-node.sh
+      - name: The single file
+        run: python tools/single_file.py
+      - name: In a real browser (headless Chrome)
+        run: python test/browser/browser_test.py
+      - name: serve.py and its launch
+        run: python test/launch_test.py .

@@ -1,0 +1,1857 @@
+{
+  "format": "star-lattice-save",
+  "version": 8,
+  "content": "lantern-coast",
+  "title": "The Lantern Coast",
+  "state": {
+    "version": 1,
+    "nextId": 87,
+    "stars": {
+      "s0": {
+        "id": "s0",
+        "n": 0,
+        "sources": [],
+        "kites": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s11": {
+        "id": "s11",
+        "n": 11,
+        "sources": [
+          "d10"
+        ],
+        "kites": [
+          "k12",
+          "k13",
+          "k14",
+          "k15",
+          "k16",
+          "k17"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": true
+      },
+      "s25": {
+        "id": "s25",
+        "n": 25,
+        "sources": [
+          "d24"
+        ],
+        "kites": [
+          "k26",
+          "k27",
+          "k28",
+          "k29",
+          "k30",
+          "k31"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s39": {
+        "id": "s39",
+        "n": 39,
+        "sources": [
+          "d38"
+        ],
+        "kites": [
+          "k40",
+          "k41",
+          "k42",
+          "k43",
+          "k44",
+          "k45"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s52": {
+        "id": "s52",
+        "n": 52,
+        "sources": [
+          "d51"
+        ],
+        "kites": [
+          "k53",
+          "k54",
+          "k55",
+          "k56",
+          "k57",
+          "k58"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s65": {
+        "id": "s65",
+        "n": 65,
+        "sources": [
+          "d64"
+        ],
+        "kites": [
+          "k66",
+          "k67",
+          "k68",
+          "k69",
+          "k70",
+          "k71"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      },
+      "s78": {
+        "id": "s78",
+        "n": 78,
+        "sources": [
+          "d77"
+        ],
+        "kites": [
+          "k79",
+          "k80",
+          "k81",
+          "k82",
+          "k83",
+          "k84"
+        ],
+        "notes": [],
+        "shelved": false,
+        "deployed": false
+      }
+    },
+    "kites": {
+      "k1": {
+        "id": "k1",
+        "name": "The Harbor Guild",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d7",
+          "d8",
+          "d10",
+          "d9"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k2": {
+        "id": "k2",
+        "name": "The Lamplighters",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d21",
+          "d22",
+          "d24",
+          "d23"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k3": {
+        "id": "k3",
+        "name": "Saltmarsh Folk",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d35",
+          "d36",
+          "d38",
+          "d37"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k4": {
+        "id": "k4",
+        "name": "The Drowned Choir",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d48",
+          "d49",
+          "d51",
+          "d50"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k5": {
+        "id": "k5",
+        "name": "House Vey",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d61",
+          "d62",
+          "d64",
+          "d63"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k6": {
+        "id": "k6",
+        "name": "The Wild Coast",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d74",
+          "d75",
+          "d77",
+          "d76"
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k12": {
+        "id": "k12",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k13": {
+        "id": "k13",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k14": {
+        "id": "k14",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k15": {
+        "id": "k15",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          "d18",
+          "d19",
+          "d20",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k16": {
+        "id": "k16",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k17": {
+        "id": "k17",
+        "name": "",
+        "description": "",
+        "color": 0,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k26": {
+        "id": "k26",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k27": {
+        "id": "k27",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k28": {
+        "id": "k28",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k29": {
+        "id": "k29",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          "d32",
+          "d33",
+          "d34",
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k30": {
+        "id": "k30",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k31": {
+        "id": "k31",
+        "name": "",
+        "description": "",
+        "color": 1,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k40": {
+        "id": "k40",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k41": {
+        "id": "k41",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k42": {
+        "id": "k42",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k43": {
+        "id": "k43",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          "d46",
+          "d47",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k44": {
+        "id": "k44",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k45": {
+        "id": "k45",
+        "name": "",
+        "description": "",
+        "color": 2,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k53": {
+        "id": "k53",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k54": {
+        "id": "k54",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k55": {
+        "id": "k55",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k56": {
+        "id": "k56",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          "d59",
+          "d60",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k57": {
+        "id": "k57",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k58": {
+        "id": "k58",
+        "name": "",
+        "description": "",
+        "color": 3,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k66": {
+        "id": "k66",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k67": {
+        "id": "k67",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k68": {
+        "id": "k68",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k69": {
+        "id": "k69",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          "d72",
+          "d73",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k70": {
+        "id": "k70",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k71": {
+        "id": "k71",
+        "name": "",
+        "description": "",
+        "color": 4,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k79": {
+        "id": "k79",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k80": {
+        "id": "k80",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k81": {
+        "id": "k81",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k82": {
+        "id": "k82",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          "d85",
+          "d86",
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k83": {
+        "id": "k83",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      },
+      "k84": {
+        "id": "k84",
+        "name": "",
+        "description": "",
+        "color": 5,
+        "dots": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "labels": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "design": null
+      }
+    },
+    "dots": {
+      "d7": {
+        "id": "d7",
+        "name": "Guildmaster Orla Penn",
+        "description": "Runs the docks with a ledger in one hand. Owes the Lamplighters more than she admits.",
+        "role": "check",
+        "marks": [
+          "met"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d21",
+            "score": 4,
+            "how": "owes him a debt"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d8": {
+        "id": "d8",
+        "name": "The Tally House",
+        "description": "Where every cargo is counted, twice.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d9": {
+        "id": "d9",
+        "name": "The smuggler’s ledger",
+        "description": "A second set of books, hidden under the Tally House floor.",
+        "role": "check",
+        "marks": [
+          "secret"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d63",
+            "score": 3,
+            "how": "lists its third ship"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d10": {
+        "id": "d10",
+        "name": "Pier Nine",
+        "description": "The only pier the Guild doesn’t patrol after dark.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s11"
+      },
+      "d18": {
+        "id": "d18",
+        "name": "The night crane",
+        "description": "Creaks at low tide.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d19": {
+        "id": "d19",
+        "name": "Warehouse Four",
+        "description": "Locked; the key is with Orla.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d20": {
+        "id": "d20",
+        "name": "The customs shed",
+        "description": "Empty since the storm.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d21": {
+        "id": "d21",
+        "name": "Keeper Ansel Rook",
+        "description": "Has tended the Great Lantern for forty years.",
+        "role": "check",
+        "marks": [
+          "met"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d22": {
+        "id": "d22",
+        "name": "The Great Lantern",
+        "description": "Seen from every cove on the coast.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d23": {
+        "id": "d23",
+        "name": "Oil running low",
+        "description": "A rumor: the reserves won’t last the winter.",
+        "role": "check",
+        "marks": [
+          "secret"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d24": {
+        "id": "d24",
+        "name": "The Lantern Tower",
+        "description": "Nine floors, one sealed.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s25"
+      },
+      "d32": {
+        "id": "d32",
+        "name": "The lens room",
+        "description": "Warm even in winter.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d33": {
+        "id": "d33",
+        "name": "Keeper’s quarters",
+        "description": "A desk of old logbooks.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d34": {
+        "id": "d34",
+        "name": "The sealed cellar",
+        "description": "Nobody remembers who sealed it.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d35": {
+        "id": "d35",
+        "name": "Elder Maeve Tull",
+        "description": "Speaks for the reed villages.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d48",
+            "score": 2,
+            "how": "fears the Choir"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d36": {
+        "id": "d36",
+        "name": "Hollin, the reed village",
+        "description": "Houses on stilts above the marsh.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d37": {
+        "id": "d37",
+        "name": "The eel harvest",
+        "description": "Late this year, and smaller.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d38": {
+        "id": "d38",
+        "name": "The Sunken Causeway",
+        "description": "Walkable only at the lowest tides.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s39"
+      },
+      "d46": {
+        "id": "d46",
+        "name": "The toll stones",
+        "description": "Carved with names.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d47": {
+        "id": "d47",
+        "name": "The fog bell",
+        "description": "Rings by itself, they say.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d48": {
+        "id": "d48",
+        "name": "The Cantor",
+        "description": "Leader of the Choir; never seen above the waterline.",
+        "role": "check",
+        "marks": [
+          "secret"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d50",
+            "score": 5,
+            "how": "wants it raised"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d49": {
+        "id": "d49",
+        "name": "Hymn of the Low Tide",
+        "description": "Sung on the night the sea draws back.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d50": {
+        "id": "d50",
+        "name": "The drowned bell",
+        "description": "Lost with the old chapel.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d51": {
+        "id": "d51",
+        "name": "The choir caves",
+        "description": "Reached through the sea at low tide.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s52"
+      },
+      "d59": {
+        "id": "d59",
+        "name": "The echo hall",
+        "description": "Every word comes back twice.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d60": {
+        "id": "d60",
+        "name": "The altar of shells",
+        "description": "Fresh offerings, always.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d61": {
+        "id": "d61",
+        "name": "Lady Imre Vey",
+        "description": "Lends money to anyone who can’t refuse her.",
+        "role": "check",
+        "marks": [
+          "met"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d7",
+            "score": 5,
+            "how": "lends the Guild money"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d62": {
+        "id": "d62",
+        "name": "Vey Manor",
+        "description": "On the cliff above the harbor.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d63": {
+        "id": "d63",
+        "name": "The Vey fleet",
+        "description": "Three ships, one of them not on any register.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d64": {
+        "id": "d64",
+        "name": "The debts of House Vey",
+        "description": "Who owes, and who is owed.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s65"
+      },
+      "d72": {
+        "id": "d72",
+        "name": "A loan to the Guild",
+        "description": "Due at the spring tide.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d73": {
+        "id": "d73",
+        "name": "An unpaid tithe",
+        "description": "Owed to the Lamplighters.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d74": {
+        "id": "d74",
+        "name": "Wreckers’ Cove",
+        "description": "Lights here have drawn ships onto the rocks.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d75": {
+        "id": "d75",
+        "name": "Jory the hermit",
+        "description": "Knows every path in the dunes.",
+        "role": "check",
+        "marks": [
+          "met"
+        ],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [
+          {
+            "dot": "d74",
+            "score": 4,
+            "how": "saw who lit the lights"
+          }
+        ],
+        "history": [],
+        "branch": null
+      },
+      "d76": {
+        "id": "d76",
+        "name": "Storm season",
+        "description": "Three weeks away.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d77": {
+        "id": "d77",
+        "name": "The lighthouse ruins",
+        "description": "The old light, before the Great Lantern.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": "s78"
+      },
+      "d85": {
+        "id": "d85",
+        "name": "The broken stair",
+        "description": "Missing every third step.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      },
+      "d86": {
+        "id": "d86",
+        "name": "An old map",
+        "description": "Shows a fourth pier.",
+        "role": "check",
+        "marks": [],
+        "props": {
+          "environment": null,
+          "finance": null,
+          "persistence": null,
+          "difficulty": null,
+          "due": null
+        },
+        "notes": [],
+        "assessment": null,
+        "trained": false,
+        "ignitedAt": null,
+        "relations": [],
+        "history": [],
+        "branch": null
+      }
+    },
+    "shelf": [],
+    "retired": [],
+    "blocks": [],
+    "waits": {},
+    "lists": {
+      "k1": [
+        "d7",
+        "d8",
+        "d9",
+        "d10",
+        "d18",
+        "d19",
+        "d20"
+      ],
+      "k2": [
+        "d21",
+        "d22",
+        "d23",
+        "d24",
+        "d32",
+        "d33",
+        "d34"
+      ],
+      "k3": [
+        "d35",
+        "d36",
+        "d37",
+        "d38",
+        "d46",
+        "d47"
+      ],
+      "k4": [
+        "d48",
+        "d49",
+        "d50",
+        "d51",
+        "d59",
+        "d60"
+      ],
+      "k5": [
+        "d61",
+        "d62",
+        "d63",
+        "d64",
+        "d72",
+        "d73"
+      ],
+      "k6": [
+        "d74",
+        "d75",
+        "d76",
+        "d77",
+        "d85",
+        "d86"
+      ]
+    },
+    "goals": {},
+    "complete": {},
+    "seed": ""
+  },
+  "board": "free",
+  "share": 100,
+  "gap": 30,
+  "pin": null,
+  "designs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

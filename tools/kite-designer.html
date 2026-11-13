@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kite Designer</title>
+  <link rel="stylesheet" href="../shared/ui/kiteDesigner.css">
+  <style>
+    :root {
+      --bg: oklch(0.982 0.006 90); --surface: oklch(0.995 0.003 90); --ink: oklch(0.27 0.03 260);
+      --muted: oklch(0.5 0.02 260); --line: oklch(0.9 0.008 260); --hover: oklch(0.94 0.01 90);
+      --map-bg: #111820;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; padding: 20px 16px 40px; background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, sans-serif; }
+    h1 { font-size: 18px; margin: 0; }
+    header p { margin: 4px 0 16px; color: var(--muted); max-width: 70ch; }
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; min-width: 0; max-width: 1100px; margin-bottom: 16px; }
+    .panel h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 10px; }
+    button { padding: 5px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; }
+    button:hover { background: var(--hover); }
+    button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+    button:disabled { opacity: 0.4; cursor: default; }
+    .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -2px; margin-right: 6px; border: 1px solid oklch(0 0 0 / 0.25); }
+    .cats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .cats button { display: inline-flex; align-items: center; }
+    .preview { background: var(--map-bg); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .preview .big { width: min(100%, 360px); height: auto; }
+    .sizes { display: flex; align-items: flex-end; gap: 18px; color: #8d99a8; font-size: 11px; }
+    .sizes figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .help { color: var(--muted); font-size: 12px; margin: 10px 0 0; }
+    #file { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kite Designer</h1>
+    <p>Draw a pattern for each category's kite. The grid is the halves pattern: 3 vertical, 3 horizontal and 3 + 3 border-parallel lines, plus the wide and long inner kites (64 regions). Designs are saved in this browser; Export writes them to a file, which PLAY's Design… can import. The same editor is on PLAY (a kite's card › Design…), where designs belong to the content set.</p>
+  </header>
+
+  <section class="panel">
+    <h2>Edit</h2>
+    <div class="cats" id="cats"></div>
+    <div id="editor"></div>
+    <div class="row" style="margin-top:8px">
+      <button id="undo" title="Ctrl+Z">↶ Undo</button>
+      <button id="redo" title="Ctrl+Shift+Z">↷ Redo</button>
+      <button id="export">Export…</button>
+      <button id="import">Import…</button>
+      <input type="file" id="file" accept=".json,application/json">
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>All categories</h2>
+    <div class="row"><span id="colorMode"></span></div>
+    <div class="preview">
+      <svg class="big" id="pvBig" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div class="sizes">
+        <figure><svg id="pv96" width="96" height="96"></svg><figcaption>96 px</figcaption></figure>
+        <figure><svg id="pv48" width="48" height="48"></svg><figcaption>48 px</figcaption></figure>
+        <figure><svg id="pv24" width="24" height="24"></svg><figcaption>24 px</figcaption></figure>
+      </div>
+    </div>
+    <p class="help">Each slot of the star shows one category's kite, tip outward, as on the map. "No color" draws every kite in gray, to check the designs alone tell the categories apart.</p>
+  </section>
+
+  <script type="module">
+    // Standalone kite design tool: the shared editor (shared/ui/kiteDesigner.js) for each category,
+    // with this page's own undo, Export / Import and an all-categories preview. Geometry and the
+    // design format are in shared/kiteDesign.js.
+    import { h, svg } from '../shared/dom.js';
+    import { kite, slotAngle, svgPoints } from '../shared/star.js';
+    import * as K from '../shared/kiteDesign.js';
+    import { kiteDesigner, designNodes, DEFAULT_SETTINGS } from '../shared/ui/kiteDesigner.js';
+
+    const STORE_KEY = 'star-lattice/kite-designer/v1';
+    const DEFAULT_CATS = [['Career', '#ff4d9e'], ['Tech Skills', '#ff763b'], ['Logistics', '#ccb300'], ['School', '#1edc2b'], ['Health', '#198cff'], ['Fun', '#cc6ded']]
+      .map(([name, color]) => ({ name, color }));
+    const GRAY = 'oklch(0.62 0.01 260)';
+    const $ = id => document.getElementById(id);
+
+    // ---- state ----------------------------------------------------------------------------
+    let cats = DEFAULT_CATS;
+    let designs = cats.map(() => K.emptyDesign());
+    let ui = { cat: 0, color: true, ...DEFAULT_SETTINGS };
+    let past = [], future = [];
+
+    const load = () => {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+        if (saved?.designs) designs = cats.map((_, i) => K.normalizeDesign(saved.designs[i]) || K.emptyDesign());
+        if (saved?.ui) for (const k of ['cat', 'mode', 'brush', 'sym', 'guides', 'color']) if (k in saved.ui) ui[k] = saved.ui[k];
+      } catch { /* nothing saved, or storage blocked */ }
+    };
+    const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify({ designs, ui })); } catch { /* ignore */ } };
+
+    /** Replace the current category's design: one undo step per stroke (the editor commits when a stroke ends). */
+    function setDesign(next) {
+      if (JSON.stringify(next) === JSON.stringify(designs[ui.cat])) return;
+      past.push({ cat: ui.cat, design: designs[ui.cat] });
+      future = [];
+      designs = designs.map((d, i) => (i === ui.cat ? next : d));
+      save(); render();
+    }
+    function undoRedo(from, to) {
+      const step = from.pop();
+      if (!step) return;
+      to.push({ cat: step.cat, design: designs[step.cat] });
+      designs = designs.map((d, i) => (i === step.cat ? step.design : d));
+      ui.cat = step.cat;
+      save(); render();
+    }
+
+    // ---- render -----------------------------------------------------------------------------
+    function render() {
+      $('cats').replaceChildren(...cats.map((c, i) => h('button', { type: 'button', 'aria-pressed': String(i === ui.cat), onclick: () => { ui.cat = i; save(); render(); } },
+        h('span', { class: 'swatch', style: { background: c.color } }), c.name)));
+      $('editor').replaceChildren(kiteDesigner({
+        design: designs[ui.cat], color: cats[ui.cat].color, onCommit: setDesign,
+        settings: ui, setSettings: next => { ui = { ...ui, ...next }; save(); render(); },
+      }));
+      $('colorMode').replaceChildren(...[[true, 'Color + design'], [false, 'No color']].map(([v, label]) =>
+        h('button', { type: 'button', 'aria-pressed': String(ui.color === v), onclick: () => { ui.color = v; save(); render(); } }, label)));
+      $('undo').disabled = !past.length;
+      $('redo').disabled = !future.length;
+      for (const [id, w] of [['pvBig', 0.012], ['pv96', 0.02], ['pv48', 0.03], ['pv24', 0.045]]) {
+        const s = $(id);
+        s.setAttribute('viewBox', '-1.03 -1.03 2.06 2.06');
+        s.replaceChildren(...cats.flatMap((c, i) => {
+          const pts = kite(slotAngle(i), 1);
+          return [...designNodes(designs[i], pts, ui.color ? c.color : GRAY),
+            svg('polygon', { points: svgPoints(pts), fill: 'none', stroke: '#111820', 'stroke-width': w * 0.6 }),
+            i === ui.cat && w < 0.015 && svg('polygon', { points: svgPoints(pts), fill: 'none', stroke: '#fff', 'stroke-width': 0.012, 'stroke-dasharray': '0.03 0.02' })];
+        }).filter(Boolean));
+      }
+    }
+
+    // ---- actions --------------------------------------------------------------------------
+    $('undo').onclick = () => undoRedo(past, future);
+    $('redo').onclick = () => undoRedo(future, past);
+    document.addEventListener('keydown', ev => {
+      if (!(ev.ctrlKey || ev.metaKey) || ev.key.toLowerCase() !== 'z') return;
+      ev.preventDefault();
+      ev.shiftKey ? undoRedo(future, past) : undoRedo(past, future);
+    });
+    $('export').onclick = () => {
+      const data = { format: 'star-lattice-kite-designs', version: 1, grid: K.GRID_ID, designs: cats.map((c, i) => ({ category: c.name, design: designs[i] })) };
+      const a = Object.assign(document.createElement('a'), {
+        href: URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })),
+        download: 'kite-designs.json',
+      });
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    };
+    $('import').onclick = () => $('file').click();
+    $('file').onchange = async ev => {
+      const f = ev.target.files[0];
+      ev.target.value = '';
+      if (!f) return;
+      try {
+        const data = JSON.parse(await f.text());
+        // A set (matched by category name, else by position) or a single design (into this kite).
+        const list = data.designs ? data.designs : [{ design: data }];
+        const next = designs.slice();
+        let n = 0;
+        list.forEach((entry, i) => {
+          const d = K.normalizeDesign(entry.design);
+          if (!d) return;
+          const byName = cats.findIndex(c => c.name === entry.category);
+          const at = data.designs ? (byName >= 0 ? byName : i) : ui.cat;
+          if (at < next.length) { past.push({ cat: at, design: next[at] }); next[at] = d; n++; }
+        });
+        if (!n) throw new Error('no designs for this grid in that file');
+        future = [];
+        designs = next;
+        save(); render();
+      } catch (e) {
+        alert('Could not import: ' + e.message);
+      }
+    };
+
+    // ---- start ----------------------------------------------------------------------------
+    load();
+    render();
+    // The content set's names and colors, when the page is served from the project.
+    fetch('../content/life.json').then(r => r.json()).then(content => {
+      if (Array.isArray(content.categories) && content.categories.length === 6) {
+        cats = content.categories.map(c => ({ name: c.name, color: c.color }));
+        render();
+      }
+    }).catch(() => { /* keep the defaults */ });
+  </script>
+</body>
+</html>

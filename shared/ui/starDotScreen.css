@@ -1,0 +1,259 @@
+/* The star-dot screen (starDotScreen.js). Uses the host's color tokens (--bg, --surface, --ink,
+   --muted, --line, which the program defines), with fallbacks. */
+
+.sds {
+  --sds-bg: var(--surface, #ffffff);
+  --sds-ink: var(--ink, #1d2330);
+  --sds-muted: var(--muted, #6b7385);
+  --sds-line: var(--line, #d9dde5);
+  --sds-accent: var(--accent, #3b6fd8);
+  --sds-gold: var(--gold, #c99a1e);
+  --sds-field: var(--bg, #f6f7f9);
+  color: var(--sds-ink);
+  background: var(--sds-bg);
+  border: 1.5px solid var(--sds-line);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.sds-muted { color: var(--sds-muted); }
+.sds-small { font-size: 0.85em; }
+.sds-title { margin: 0 0 8px; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sds-muted); }
+
+/* ---- Header ---- */
+.sds-header { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; border-bottom: 1.5px solid var(--sds-line); }
+.sds-name { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-right: 1.5px solid var(--sds-line); }
+.sds-name h2 { margin: 0; font-size: 1.3em; }
+.sds-summary { padding: 12px 16px; display: grid; gap: 4px; }
+.sds-status.ignited { color: var(--sds-gold); }
+.sds-status.training { color: var(--sds-accent); }
+.sds-header-tools { margin-left: 8px; }
+.sds-description { white-space: pre-wrap; max-height: 6.5em; overflow: auto; }
+.sds-star-outline { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linejoin: round; }
+
+/* ---- Body: the widgets in two columns, as the layout says (engine layout.js) ---- */
+.sds-body { flex: 1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }
+.sds-col { display: flex; flex-direction: column; min-width: 0; min-height: 100%; }
+.sds-col + .sds-col { border-left: 1.5px solid var(--sds-line); }
+.sds-cell { padding: 14px 16px; min-width: 0; }
+.sds-widget + .sds-widget { border-top: 1.5px solid var(--sds-line); }
+/* Edit mode: a grip and × on each widget, a place to drop at each column's end, the layout bar. */
+.sds-widget { position: relative; }
+.sds-edit .sds-widget { padding-top: 30px; }   /* Room for the grip and × above the widget's own head */
+.sds-widget-bar { position: absolute; top: 5px; right: 8px; display: flex; gap: 4px; align-items: center; opacity: 0.45; }
+.sds-widget:hover > .sds-widget-bar, .sds-widget-bar:focus-within { opacity: 1; }
+.sds-grip { cursor: grab; padding: 0 4px; color: var(--sds-muted, #6b7280); user-select: none; }
+.sds-widget-off { padding: 0 6px; }
+.sds-col-end { flex: 1; min-height: 28px; margin: 6px 10px 10px; border: 1.5px dashed transparent; border-radius: 8px; }
+.sds-drop { outline: 2px dashed var(--sds-accent); outline-offset: -4px; }
+.sds-col-end.sds-drop { border-color: var(--sds-accent); }
+.sds-layout-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 6px 16px; border-bottom: 1.5px solid var(--sds-line); }
+.sds-scopes { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin-right: auto; }
+.sds-scope { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; font-size: 0.92em; }
+.sds-scope.on { font-weight: 600; }
+.sds-widgets-off { display: flex; flex-wrap: wrap; gap: 6px; }
+.sds-strip-btn.plain { font-weight: 700; color: var(--sds-accent); }
+
+/* ---- The checklist's strip (Edit mode: adds an item with that attribute) and Filter ▾ ---- */
+.sds-check-wrap { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; }
+.sds-strip { display: flex; flex-direction: column; border: 1px solid var(--sds-line); border-radius: 8px; overflow: hidden; align-self: start; }
+.sds-strip-btn { display: grid; place-items: center; height: 38px; border: 0; border-bottom: 1px solid var(--sds-line); background: none; color: var(--sds-ink); font: inherit; font-size: 1.05em; cursor: pointer; }
+.sds-strip-btn:last-child { border-bottom: 0; }
+.sds-strip-btn:hover { background: color-mix(in oklab, var(--sds-accent) 14%, transparent); }
+.sds-filter-drop { position: relative; }
+.sds-filter-drop > summary { list-style: none; cursor: pointer; }
+.sds-filter-drop > summary::-webkit-details-marker { display: none; }
+.sds-filter-drop.on > summary { border-color: var(--sds-accent); color: var(--sds-accent); }
+.sds-filter-menu { position: absolute; z-index: 5; top: calc(100% + 4px); left: 0; width: 240px; max-height: 320px; overflow-y: auto; display: flex; flex-direction: column; gap: 2px; padding: 8px; background: var(--sds-bg, #fff); border: 1.5px solid var(--sds-line); border-radius: 10px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.14); }
+.sds-filter-option { text-align: left; border-color: transparent; }
+.sds-filter-option.on { border-color: var(--sds-accent); }
+.sds-filter-icon { display: inline-block; min-width: 1.4em; text-align: center; }
+.sds-attr-hl { outline: 2px solid var(--sds-accent); outline-offset: 2px; border-radius: 4px; background: color-mix(in oklab, var(--sds-accent) 10%, transparent); }
+
+/* ---- Bullets: box (needs assessment) or circle (click to complete); border = Difficulty: thin Easy, thick Medium, double Hard, thin gray unset ---- */
+.sds-bullet { display: inline-block; width: 13px; height: 13px; border: 1.8px solid currentColor; box-sizing: border-box; vertical-align: middle; }
+.sds-bullet.circle { border-radius: 50%; }
+.sds-bullet.double { width: 16px; height: 16px; border-width: 4px; border-style: double; }
+.sds-bullet.thick { border-width: 3px; }
+.sds-bullet.unset { border-color: var(--sds-muted); }
+.sds-bullet.unset.done { background: var(--sds-muted); }
+.sds-mark.earn { color: #2f9e5b; }
+.sds-mark.cost, .sds-mark.overdue { color: #d64545; }
+.sds-mark.reminder { opacity: 0.45; }
+.sds-bullet.done { background: currentColor; }
+/* A child with children shows their progress: half-filled while in training. */
+.sds-bullet.half { background: linear-gradient(to top, currentColor 50%, transparent 50%) padding-box; }
+.sds-bullet.unset.half { background: linear-gradient(to top, var(--sds-muted) 50%, transparent 50%) padding-box; }
+
+/* ---- Panels: merge (under the header), the slot picker (Add a child…, Move to a slot…) ---- */
+.sds-panel { padding: 12px 16px; border-bottom: 1.5px solid var(--sds-line); background: color-mix(in oklab, var(--sds-accent) 6%, var(--sds-bg)); display: grid; gap: 8px; }
+.sds-slot-picker { border: 1.5px solid var(--sds-line); border-radius: 8px; margin-top: 10px; }
+.sds-list { margin: 0; padding-left: 1.2em; display: grid; gap: 3px; }
+.sds-subtitle { font-weight: 600; font-size: 0.9em; margin-top: 4px; }
+.sds-slots { display: grid; gap: 4px; }
+.sds-slot-kite { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.sds-slot-kite > .sds-muted { min-width: 6.5em; }
+.sds-slot { padding: 1px 6px; font-size: 0.85em; }
+.sds-slot.taken { color: var(--sds-muted); }
+.sds-slot.current { border-color: var(--sds-accent); }
+.sds-primary { background: var(--sds-accent); color: var(--sds-bg); border-color: var(--sds-accent); justify-self: start; }
+
+/* ---- Checklist ---- */
+.sds-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.sds-head .sds-title { margin: 0; }
+.sds-buttons { display: inline-flex; gap: 6px; }
+.sds-items, .sds-note-list, .sds-relations { list-style: none; margin: 0; padding: 0; }
+.sds-item { padding: 4px 0; }
+.sds-item-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sds-item.selected > .sds-item-row { background: color-mix(in oklab, var(--sds-accent) 12%, transparent); border-radius: 6px; }
+.sds-item.done .sds-item-text { color: var(--sds-muted); }
+.sds-item.stale .sds-item-text { text-decoration: line-through; color: var(--sds-muted); }
+.sds-item-text { flex: 1; min-width: 8em; cursor: pointer; }
+.sds-retrain { min-width: 0.8em; font-size: 0.72em; font-weight: 700; color: var(--sds-muted); }
+.sds .remove-btn { opacity: 1; }
+.sds-bullet-btn { display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; background: none; color: var(--sds-ink); cursor: pointer; }
+.sds-bullet-btn:disabled { cursor: default; opacity: 0.5; }
+.sds-marks { color: var(--sds-muted); white-space: nowrap; }
+.sds-tag { font-size: 0.75em; padding: 1px 6px; border-radius: 10px; background: var(--sds-line); color: var(--sds-muted); }
+/* Dragging a row onto another swaps their slots. */
+.sds-item[draggable="true"] > .sds-item-row { cursor: grab; }
+.sds-item.sds-dragging { opacity: 0.45; }
+.sds-item.sds-drop > .sds-item-row { outline: 2px dashed var(--sds-accent); outline-offset: 1px; border-radius: 6px; }
+.sds-drag-hint { margin: 6px 0 0; }
+.sds-add-child { margin-top: 8px; display: grid; gap: 4px; }
+.sds-add-child .sds-add { margin-top: 0; }
+.sds-tools { display: inline-flex; flex-wrap: wrap; gap: 3px; }
+.sds-tools .sds-btn { padding: 1px 6px; font-size: 0.8em; }
+.sds-mark-btn.on { background: var(--sds-accent); color: var(--sds-bg); border-color: var(--sds-accent); }
+
+/* ---- Attributes ---- */
+.sds-attrs { display: grid; gap: 8px; }
+.sds-attr { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.sds-attr-name { color: var(--sds-muted); }
+.sds-finance { display: inline-flex; gap: 4px; }
+.sds-amount { width: 7em; }
+.sds-attr-value { text-align: right; display: inline-flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px; }
+.sds-inherited { color: var(--sds-muted); font-style: italic; }
+.sds-selected-item { margin: 0 0 8px; font-weight: 600; }
+.sds-actions { margin-top: 12px; }
+.sds-cycle { padding: 1px 4px; border: 0; border-bottom: 1px dashed var(--sds-muted); border-radius: 0; background: none; color: var(--sds-ink); font: inherit; cursor: pointer; }
+.sds-cycle:hover { color: var(--sds-accent); border-bottom-color: var(--sds-accent); }
+
+/* ---- Assessor ---- */
+.sds-assess-box { border: 1.5px solid var(--sds-line); border-radius: 8px; padding: 14px; min-height: 120px; display: grid; align-content: start; gap: 10px; }
+.sds-assess-item { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+
+/* ---- Relevance Information ---- */
+.sds-averages { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 10px; }
+.sds-avg { white-space: nowrap; }
+.sds-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: 0; }
+.sds-relation { padding: 6px 0; border-top: 1px solid var(--sds-line); }
+.sds-relation-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sds-how { margin-top: 3px; white-space: pre-wrap; }
+.sds-chip { border-left: 4px solid; }
+.sds-score-read { color: var(--sds-muted); }
+.sds-related-by { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sds-picker { margin-top: 8px; border: 1.5px solid var(--sds-line); border-radius: 8px; padding: 8px; }
+.sds-picker-head { display: flex; gap: 6px; margin-bottom: 6px; }
+.sds-picker-head .sds-input { flex: 1; }
+.sds-picker-list { max-height: 240px; overflow: auto; }
+.sds-picker-cat { font-weight: 600; margin: 6px 0 2px; }
+.sds-picker-option { display: block; width: 100%; text-align: left; margin: 2px 0; }
+.sds-picker-group[hidden], .sds-picker-option[hidden] { display: none; }
+
+/* ---- Controls ---- */
+.sds-btn { padding: 3px 9px; border: 1px solid var(--sds-line); border-radius: 6px; background: var(--sds-bg); color: var(--sds-ink); font: inherit; cursor: pointer; }
+.sds-btn:hover:not(:disabled) { border-color: var(--sds-accent); }
+.sds-btn:disabled { opacity: 0.45; cursor: default; }
+.sds-link { border: 0; padding: 0; color: var(--sds-accent); background: none; text-decoration: underline; }
+.sds-back { margin-right: 4px; }
+.sds-input { background: var(--sds-field); color: var(--sds-ink); border: 1px solid var(--sds-line); border-radius: 6px; padding: 3px 6px; font: inherit; }
+.sds-add { display: flex; gap: 6px; margin-top: 8px; }
+.sds-add .sds-input { flex: 1; min-width: 0; }
+.sds .editable { cursor: text; }
+.sds .editable.placeholder { color: var(--sds-muted); font-style: italic; }
+.sds .edit-input { width: 100%; font: inherit; color: var(--sds-ink); background: var(--sds-field); border: 1px solid var(--sds-line); border-radius: 6px; padding: 3px 6px; box-sizing: border-box; }
+
+/* ---- Narrow screens: stack the cells ---- */
+@media (max-width: 760px) {
+  /* A row's ↑ ↓ × show on the selected row only, so each child stays one line (tap its text to select it). */
+  .sds-item:not(.selected) .sds-tools { display: none; }
+  .sds-header { grid-template-columns: 1fr; }
+  .sds-name { border-right: 0; border-bottom: 1.5px solid var(--sds-line); }
+  .sds-body { grid-template-columns: 1fr; }
+  .sds-col + .sds-col { border-left: 0; border-top: 1.5px solid var(--sds-line); }
+  .sds-check-wrap { grid-template-columns: 1fr; }
+  .sds-strip { flex-direction: row; overflow-x: auto; }
+  .sds-strip-btn { flex: 0 0 40px; border-bottom: 0; border-right: 1px solid var(--sds-line); }
+}
+.sds-history { font-size: 0.88em; }
+
+/* Each checklist row's "Open ›": its own screen. */
+.sds-child { font-size: 0.85em; text-decoration: none; }
+.sds-child:hover { text-decoration: underline; }
+
+/* ---- Notes: a widget of its own ---- */
+.sds-notes { min-width: 0; }
+.sds-note-list li { display: flex; align-items: baseline; gap: 6px; padding: 3px 0; white-space: pre-wrap; }
+.sds-note-list li > .editable { flex: 1; }
+
+/* ---- Checklist · Table, the central star's screen ---- */
+.sds-views, .sds-cols { display: inline-flex; gap: 0; }
+.sds-seg-btn { border-radius: 0; margin-left: -1px; }
+.sds-seg-btn:first-child { border-radius: 6px 0 0 6px; margin-left: 0; }
+.sds-seg-btn:last-child { border-radius: 0 6px 6px 0; }
+.sds-seg-btn.on { background: var(--sds-ink); color: var(--sds-bg); border-color: var(--sds-ink); }
+.sds-table-wrap { display: grid; gap: 8px; overflow-x: auto; }
+.sds-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+.sds-table th { text-align: left; font-size: 0.78em; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sds-muted); font-weight: 600; padding: 4px 8px; border-bottom: 1.5px solid var(--sds-line); white-space: nowrap; }
+.sds-table td { padding: 6px 8px; border-bottom: 1px solid var(--sds-line); vertical-align: middle; }
+.sds-table-row:hover td { background: color-mix(in oklab, var(--sds-accent) 6%, transparent); }
+.sds-score-cell { display: inline-block; min-width: 2.6em; padding: 2px 6px; border-radius: 5px; text-align: center; font-weight: 600; color: oklch(0.22 0.03 260); }
+.sds-central .sds-name h2 { font-size: 1.4em; }
+
+/* The assessor's question editor, with a preview of the popout (its card is styled in app.css, .qz-*). */
+.sds-question-editor { display: grid; gap: 8px; }
+.sds-question-editor textarea { width: 100%; box-sizing: border-box; min-height: 3.2em; font: inherit; }
+.sds-choice-row { display: flex; gap: 6px; align-items: center; }
+.sds-choice-row input[type="text"] { flex: 1; min-width: 0; font: inherit; }
+.sds-question-image { max-width: 160px; height: auto; border-radius: 6px; display: block; }
+.sds-question-preview { border: 1px dashed color-mix(in oklab, var(--muted) 50%, transparent); border-radius: 10px; padding: 12px; }
+
+/* Edit questions, the set as Markdown. */
+.sds-q-source { width: 100%; box-sizing: border-box; font: 0.85em/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 2; }
+.sds-q-check { padding: 8px 10px; border-radius: 8px; font-size: 0.9em; }
+.sds-q-check.bad { background: oklch(0.6 0.17 25 / 0.1); }
+.sds-q-check.good { background: oklch(0.62 0.15 150 / 0.12); }
+.sds-q-check ul { margin: 4px 0 0; padding-left: 1.2em; }
+/* The question form, a card per question. */
+.qf { display: flex; flex-direction: column; gap: 10px; }
+.qf-set { display: flex; flex-direction: column; gap: 6px; }
+.qf-cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.qf-card { border: 1px solid var(--sds-line); border-left: 3px solid oklch(0.6 0.17 25 / 0.7); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 8px; background: var(--sds-bg); }
+.qf-card.ready { border-left-color: oklch(0.62 0.15 150 / 0.8); }
+.qf-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.qf-n { font-weight: 600; }
+.qf-tools { margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap; }
+.qf-text, .qf-recall, .qf-accept, .qf-blank-answers, .qf-explain, .qf-hint, .qf-set-context { width: 100%; box-sizing: border-box; }
+.qf-recall, .qf-accept, .qf-blank-answers { font: 0.85em/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.qf-fields { display: flex; flex-direction: column; gap: 6px; }
+.qf-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.qf-row label { display: inline-flex; align-items: center; gap: 4px; }
+.qf-number, .qf-tolerance { width: 8em; }
+.qf-decimals { width: 5em; }
+.qf-units { width: 6em; }
+.qf-choices, .qf-blanks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.qf-choice { display: grid; grid-template-columns: 1.4em minmax(8em, 1fr) auto minmax(6em, 0.8fr) auto; align-items: center; gap: 6px; }
+.qf-letter { font-weight: 600; color: var(--sds-muted); }
+.qf-problems { margin: 0; padding-left: 1.2em; color: oklch(0.55 0.17 25); }
+.qf-problems:empty { display: none; }
+.qf-not-saved { color: oklch(0.55 0.17 25); margin: 0; }
+.qf-chain { border: 1px dashed var(--sds-line); border-radius: 10px; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+.qf-chain-title { font-weight: 600; }
+.qf-more summary { cursor: pointer; color: var(--sds-muted); }
+.qf-more[open] { display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 560px) { .qf-choice { grid-template-columns: 1.4em 1fr auto; } .qf-feedback { grid-column: 2 / -1; } }
+.sds-q-images ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px; }
+.sds-q-images li { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }

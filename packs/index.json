@@ -1,0 +1,47 @@
+{
+  "about": "The showcase packs (tools/build_packs.mjs): what a new browser starts with, and States ▾ › New from a blueprint…. Paths are relative to this file.",
+  "packs": [
+    {
+      "id": "organizer-demo",
+      "title": "Organizer demo",
+      "about": "A life organizer: six areas of a life, tasks with due dates, routines that come back, and bigger goals broken into steps.",
+      "content": "organizer-demo/pack.json",
+      "board": "organizer-demo/board.json"
+    },
+    {
+      "id": "statistics-essentials",
+      "title": "Statistics essentials",
+      "about": "A study aid: 36 questions in six topics, answered on the map. Choices and the order shuffle each session; a goal appears after three right answers.",
+      "content": "statistics-essentials/pack.json",
+      "board": "statistics-essentials/board.json"
+    },
+    {
+      "id": "intro-data-analysis",
+      "title": "Intro to data analysis",
+      "about": "A course map: six units of lessons, a project at each unit’s tip that opens the next steps, and short checks on the way. In three projects, two core steps done unlock the stretch work.",
+      "content": "intro-data-analysis/pack.json",
+      "board": "intro-data-analysis/board.json"
+    },
+    {
+      "id": "home-cooking",
+      "title": "Home cooking skill tree",
+      "about": "A skill tree: basics on the central star, and each category’s signature skill unlocks a star of advanced ones when it’s done.",
+      "content": "home-cooking/pack.json",
+      "board": "home-cooking/board.json"
+    },
+    {
+      "id": "lantern-coast",
+      "title": "The Lantern Coast",
+      "about": "A campaign notebook: six factions of a made-up coast, their people and places, notes, and how they feel about each other.",
+      "content": "lantern-coast/pack.json",
+      "board": "lantern-coast/board.json"
+    },
+    {
+      "id": "trivia-night",
+      "title": "Trivia night",
+      "about": "A game: six rounds of twenty questions, a few on the field at a time. Answer three right in a round and a goal question twinkles; answer it to win the round.",
+      "content": "trivia-night/pack.json",
+      "board": "trivia-night/board.json"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+/* The kite design editor (kiteDesigner.js), in the app (PLAY's Design…) and the standalone Kite Designer.
+   Uses the host's color tokens (--line, --ink, --on-ink), with light fallbacks, so it follows the app's dark mode. */
+
+.kd { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 760px) { .kd { grid-template-columns: minmax(0, 1fr); } }
+.kd-row { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin-bottom: 8px; }
+.kd-label { font-size: 12px; min-width: 5.5em; opacity: 0.7; }
+.kd-seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line, oklch(0.9 0.008 260)); border-radius: 7px; overflow: hidden; }
+.kd-seg .seg { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border: 0; border-right: 1px solid var(--line, oklch(0.9 0.008 260)); border-radius: 0; background: transparent; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
+.kd-seg .seg:last-child { border-right: 0; }
+.kd-seg .seg.on { background: var(--ink, oklch(0.27 0.03 260)); color: var(--on-ink, oklch(0.98 0.006 90)); }
+.kd-swatch { display: inline-block; width: 13px; height: 13px; border-radius: 3px; border: 1px solid oklch(0 0 0 / 0.25); }
+.kd-swatch.none { background: repeating-linear-gradient(45deg, #fff 0 3px, #ccc 3px 6px) !important; }
+.kd-editor-wrap { display: flex; justify-content: center; padding: 4px 0; }
+.kd-editor { width: min(100%, 320px); height: auto; touch-action: none; user-select: none; }
+.kd-editor .kd-region { cursor: crosshair; }
+.kd-editor .kd-hl { fill: none; stroke: oklch(0.55 0.13 250); stroke-width: 0.008; pointer-events: none; }
+.kd-editor .kd-guide { stroke: color-mix(in oklab, var(--ink, oklch(0.27 0.03 260)) 35%, transparent); stroke-width: 0.003; pointer-events: none; }
+.kd-editor .kd-hit { stroke: transparent; stroke-width: 0.035; stroke-linecap: round; cursor: pointer; }
+.kd-editor .kd-hit.hover { stroke: oklch(0.55 0.13 250 / 0.45); }
+.kd-editor .kd-outline { fill: none; stroke: var(--ink, oklch(0.27 0.03 260)); stroke-width: 0.006; pointer-events: none; }
+.kd-status { font-size: 12px; opacity: 0.7; min-height: 1.5em; text-align: center; }
+.kd-help { font-size: 12px; opacity: 0.75; margin: 8px 0 0; padding-left: 18px; }
+.kd-help li { margin: 2px 0; }
+.kd-look { background: #111820; border-radius: 8px; padding: 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; color: #8d99a8; }
+.kd-caption { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+.kd-big { width: min(100%, 320px); height: auto; }
+.kd-sizes { display: flex; align-items: flex-end; gap: 16px; font-size: 11px; }
+.kd-sizes figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.kd-s96 { width: 96px; height: 96px; }
+.kd-s48 { width: 48px; height: 48px; }
+.kd-s24 { width: 24px; height: 24px; }
